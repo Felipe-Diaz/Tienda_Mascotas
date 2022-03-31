@@ -24,7 +24,7 @@
  
  //hey anoten los templates que ya estan trabajando para que no se repitan
  //Felipe  - Index
- //Renato  - 
+ //Renato  - Contactos
  //Jose    -
  //Marcelo - Productos
  //Javiera - 

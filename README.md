@@ -6,7 +6,7 @@
  #Luego vemos si agregamos EASTER Eggs
  #Paginas que faltan para la evaluación (Debemos hacerlas de 0 o buscar sus templates): 
    #Usuarios registrados:
-    #Registro de usuarios
+    #Registro de usuarios  Felipe - Díaz(Registrate (Basado en Contactanos))
     #Perfil
     #Carro de compra
     #Historial de compra
@@ -25,7 +25,7 @@
  //hey anoten los templates que ya estan trabajando para que no se repitan
  //Felipe  - Index
  //Renato  - Contactos
- //Jose    -
+ //Jose    - Servicios
  //Marcelo - Productos
  //Javiera - 
  

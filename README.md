@@ -21,3 +21,14 @@
     
  #Pueden tomar el que quieran y luego de eso hacerlo, tambien, si toman uno, dejenlo anotado en este mismo archivo
  #Para que de esa forma sepa el quipo que no tienen que hacer
+ 
+ //hey anoten los templates que ya estan trabajando para que no se repitan
+ //Felipe  - Index
+ //Renato  - 
+ //Jose    -
+ //Marcelo - Productos
+ //Javiera - 
+ 
+ //RECUERDEN QUE EL PRIMER CONTROL SOLO DEBEN TENER LA ESTRUCTURA NO SE CALIENTE MUCHO LA CABEZA IMPLEMENTADO FUNCIONES
+
+//El nombre de la tienda es Pet Paradise

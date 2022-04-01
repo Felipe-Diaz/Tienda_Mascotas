@@ -8,7 +8,7 @@
  
  
    ##Usuarios registrados:
-    #Registro de usuarios  Felipe Díaz(Registrate (Basado en Contactanos))
+    #-----Registro de usuarios  (LISTO)
     #Perfil
     #Carro de compra
     #Historial de compra

@@ -9,7 +9,7 @@
  
    ##Usuarios registrados:
     #-----Registro de usuarios  (LISTO)
-    #Perfil
+    #Perfil  --Felipe
     #Carro de compra
     #Historial de compra
     #Carro de compra
@@ -25,7 +25,7 @@
  #Para que de esa forma sepa el quipo que no tienen que hacer
  
  //hey anoten los templates que ya estan trabajando para que no se repitan
- //Felipe  - Index (Falta actualizar productos, y servicios)
+ //-- Index (Listo)
  //Renato  - Contactos
  //Jose    - Servicios
  //Marcelo - Productos

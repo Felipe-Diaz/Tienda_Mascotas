@@ -9,7 +9,7 @@
  
    ##Usuarios registrados:
     #-----Registro de usuarios  (LISTO)
-    #Perfil  --Felipe
+    #-----Perfil                (LISTO)
     #Carro de compra
     #Historial de compra
     #Carro de compra

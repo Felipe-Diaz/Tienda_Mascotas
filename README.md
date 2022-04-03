@@ -12,7 +12,7 @@
     #-----Perfil                (LISTO)
     #Carro de compra
     #Historial de compra
-    #Carro de compra
+    #Suscripción
    
    ##Admin:
     #Usuarios

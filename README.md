@@ -10,9 +10,9 @@
    ##Usuarios registrados:
     #-----Registro de usuarios  (LISTO)
     #-----Perfil                (LISTO)
-    #Carro de compra
-    #Historial de compra
-    #Suscripción                (Felipe)
+    #Carro de compra    (Carro de compra y el pago - pagina que dice "gracias por comprar acá")
+    #Historial de compra 
+    #Suscripción                (Listo -- Falta carro de compra para que todo funcione)
    
    ##Admin:
     #Usuarios

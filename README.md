@@ -18,7 +18,7 @@
     #Usuarios                   --Javiera
     #Permisos
     #Facturas
-    #Productos en Stock
+    #Productos en Stock          --Renato
     #Historial de ventas
     
  #Pueden tomar el que quieran y luego de eso hacerlo, tambien, si toman uno, dejenlo anotado en este mismo archivo

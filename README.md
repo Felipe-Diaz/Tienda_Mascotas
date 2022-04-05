@@ -31,6 +31,8 @@
  //Marcelo - Productos
  //Javiera - 
  
+ #¿Qué mas falta hacer? 
+ 
  //RECUERDEN QUE EL PRIMER CONTROL SOLO DEBEN TENER LA ESTRUCTURA NO SE CALIENTE MUCHO LA CABEZA IMPLEMENTADO FUNCIONES
 
 //El nombre de la tienda es Pet Paradise

@@ -15,7 +15,7 @@
     #Suscripción                (Listo -- Falta carro de compra para que todo funcione)
    
    ##Admin:
-    #Usuarios
+    #Usuarios                   --Javiera
     #Permisos
     #Facturas
     #Productos en Stock

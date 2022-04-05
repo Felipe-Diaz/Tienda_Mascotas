@@ -8,7 +8,7 @@
  
  
    ##Usuarios registrados:
-    #-----Registro de usuarios  (LISTO)
+    #-----Registro de usuarios  (LISTO -- Falta un apartado para un inicio de sesión. (Felipe) )
     #-----Perfil                (LISTO)
     #Carro de compra    (Carro de compra y el pago - pagina que dice "gracias por comprar acá")
     #Historial de compra 

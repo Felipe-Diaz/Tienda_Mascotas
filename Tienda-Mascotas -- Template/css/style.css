@@ -456,3 +456,20 @@
 .blog-item a:hover i::after {
     width: 50px;
 }
+
+.image_stock{
+    width: 360px;
+    height: 360px;
+}
+
+.stock_ammount{
+    width: 50px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.price_product{
+    width: 150px;
+    vertical-align: top;
+    display: inline-block;
+}

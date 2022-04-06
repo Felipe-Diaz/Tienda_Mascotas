@@ -10,7 +10,7 @@
    ##Usuarios registrados:
     #-----Registro de usuarios  (LISTO -- Falta un apartado para un inicio de sesión. (Felipe) )
     #-----Perfil                (LISTO)
-    #Carro de compra    (Carro de compra y el pago - pagina que dice "gracias por comprar acá")
+    #Carro de compra            (Carro de compra y el pago - pagina que dice "gracias por comprar acá")
     #Historial de compra 
     #Suscripción                (Listo -- Falta carro de compra para que todo funcione)
    
@@ -23,13 +23,6 @@
     
  #Pueden tomar el que quieran y luego de eso hacerlo, tambien, si toman uno, dejenlo anotado en este mismo archivo
  #Para que de esa forma sepa el quipo que no tienen que hacer
- 
- //hey anoten los templates que ya estan trabajando para que no se repitan
- //-- Index (Listo)
- //Renato  - Contactos
- //Jose    - Servicios
- //Marcelo - Productos
- //Javiera - 
  
  #¿Qué mas falta hacer? ---------------------------
  

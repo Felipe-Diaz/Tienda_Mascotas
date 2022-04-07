@@ -10,16 +10,16 @@
    ##Usuarios registrados:
     #-----Registro de usuarios  (LISTO -- Falta un apartado para un inicio de sesión. (Felipe) )
     #-----Perfil                (LISTO)
-    #Carro de compra            (Carro de compra y el pago - pagina que dice "gracias por comprar acá")
-    #Historial de compra 
+    #Carro de compra            (Marcelo)
+    #seguimiento                (Marcelo)
+    #Historial de compra        --Felipe
     #Suscripción                (Listo -- Falta carro de compra para que todo funcione)
    
    ##Admin:
-    #Usuarios                   --Javiera
-    #Permisos
-    #Facturas
-    #Productos en Stock          --Renato
-    #Historial de ventas
+    #Usuarios - Permisos         --Javiera
+    #Facturas                    --Felipe
+    #Productos en Stock          (Listo)
+    #Historial de ventas         --Renato
     
  #Pueden tomar el que quieran y luego de eso hacerlo, tambien, si toman uno, dejenlo anotado en este mismo archivo
  #Para que de esa forma sepa el quipo que no tienen que hacer

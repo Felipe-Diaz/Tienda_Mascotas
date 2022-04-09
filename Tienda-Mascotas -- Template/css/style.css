@@ -509,3 +509,14 @@
     margin-top: 5px;
     margin-bottom: 5p;
 }
+.shopcart_img{
+    width: 160px;
+}
+.btn_pago {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: right;
+}
+.img_seguimiento{
+    width: 300px;
+}

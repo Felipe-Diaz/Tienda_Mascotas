@@ -8,11 +8,6 @@
  
  
    ##Usuarios registrados:
-    #-----Registro de usuarios  (LISTO -- Falta un apartado para un inicio de sesión. (Felipe) )
-    #-----Perfil                (LISTO)
-    #Carro de compra            (Marcelo)
-    #seguimiento                (Marcelo)
-    #Historial de compra        --Felipe
     #Suscripción                (Listo -- Falta carro de compra para que todo funcione)
    
    ##Admin:

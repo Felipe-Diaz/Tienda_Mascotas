@@ -520,3 +520,21 @@
 .img_seguimiento{
     width: 300px;
 }
+
+.logo{
+    font-size: 30px;
+    color: var(--dark);
+}
+
+.icon-btn{
+    width: 30px;
+    padding: 4px;
+    margin: 1px;
+    display: inline-block;
+}
+.avatar{
+    vertical-align: middle;
+    width: 30px;
+    padding: 1px;
+    display: inline-block;
+}

@@ -61,133 +61,36 @@
 </head>
 
 <body>
-    <!-- Topbar Start -->
-    <div class="container-fluid border-bottom d-none d-lg-block">
-        <div class="row gx-0">
-            <div class="col-lg-4 text-center py-2">
-                <div class="d-inline-flex align-items-center">
-                    <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
-                    <div class="text-start">
-                        <h6 class="text-uppercase mb-1">Encuentranos en:</h6>
-                        <span>Av. Matta 463, Región Metropolitana de Santiago, Chile</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 text-center border-start border-end py-2">
-                <div class="d-inline-flex align-items-center">
-                    <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
-                    <div class="text-start">
-                        <h6 class="text-uppercase mb-1">¿Tienes dudas?</h6>
-                        <span>Pet.Paradise@petparad.cl</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 text-center py-2">
-                <div class="d-inline-flex align-items-center">
-                    <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
-                    <div class="text-start">
-                        <h6 class="text-uppercase mb-1">Contáctanos</h6>
-                        <span>+569 4588 2159</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0">
-        <a href="index.html" class="navbar-brand ms-lg-5">
-            <h1 class="m-0 text-uppercase text-dark"><i class="bi bi-shop fs-1 text-primary me-3"></i>Pet Shop</h1>
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-3">
+        <a href="index.html" class="navbar-brand ms-lg-4">
+            <h1 class="m-0 text-uppercase text-dark"><i class="text-primary"></i>Desarrollador</h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0">
-                <a href="index.html" class="nav-item nav-link active">Inicio</a>
-                <a href="about.html" class="nav-item nav-link">Acerca de nosotros</a>
-                <a href="service.html" class="nav-item nav-link">Nuestros servicios</a>
-                <a href="product.html" class="nav-item nav-link">Nuestros productos</a>
-                <a href="perfil.html" class="nav-item nav-link">Mi perfil</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Otros </a>
-                    <div class="dropdown-menu m-0">
-                        <a href="suscription.html" class="dropdown-item">Suscribirse</a>
-                        <a href="team.html" class="dropdown-item">Nuestro Equipo</a>
-                        <a href="contact.html" class="dropdown-item">Contactanos</a>
-                        <a href="contact.html" class="dropdown-item">Productos en stock</a>
-                        <!-- <a href="testimonial.html" class="dropdown-item">Testimonios de clientes</a> -->
-                        <!-- <a href="blog.html" class="dropdown-item">Blog Grid</a> -->
-                        <!-- <a href="detail.html" class="dropdown-item">Blog Detail</a> -->
-                    </div>
-                </div>
-                <a href="register.html" class="nav-item nav-link nav-contact bg-primary text-white px-5 ms-lg-5">Registrarse / Iniciar Sesión <i class="bi bi-arrow-right"></i></a>
+                <a href="developer.html" class="nav-item nav-link active">Desarrollador</a>
+                <a href="user.html" class="nav-item nav-link">Usuarios</a>
+                <a href="#" class="nav-item nav-link">Facturas</a>
+                <a href="productstockAdmin.html" class="nav-item nav-link">Stock</a>
+                <a href="saleshistory.html" class="nav-item nav-link">Historial</a>
             </div>
         </div>
     </nav>
     <!-- Navbar End -->
 
-    <!-- Products Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 600px;">
-                <h1 class="display-5 text-uppercase mb-0">Stock de productos:</h1>
-            </div>
-            <div class="pb-5">
-                <div class="pb-5">
-                    <div class="product-item position-relative bg-light d-flex flex-column text-center col-lg-4">
-                        <img class="image_stock" src="img/product-1.png" alt="">
-                        <h6 class="text-uppercase">Quality Pet Foods</h6>
-                        <h5 class="text-primary mb-0">$150.000</h5>
-                        <form action="">
-                            <label for="stock_p1">Stock</label>
-                            <input type="number" name="stock_p1" id="stock_p1" class="stock_ammount">
-                            <br>
-                            <label for="price_p1">Precio  $:</label>
-                            <input type="number" name="price_p1" id="price_p1" class="price_product">
-                            <br>
-                            <button type="submit" class="btn btn-primary">Guardar</button>
-                        </form>
-                    </div>
-                </div>
-                <div class="pb-5">
-                    <div class="product-item position-relative bg-light d-flex flex-column text-center col-lg-4">
-                        <img class="image_stock" src="img/product-2.png" alt="">
-                        <h6 class="text-uppercase">Quality Pet Foods</h6>
-                        <h5 class="text-primary mb-0">$150.000</h5>
-                        <form action="">
-                            <label for="stock_p2">Stock</label>
-                            <input type="number" name="stock_p2" id="stock_p2" class="stock_ammount">
-                            <br>
-                            <label for="price_p1">Precio  $:</label>
-                            <input type="number" name="price_p2" id="price_p2" class="price_product">
-                            <br>
-                            <button type="submit" class="btn btn-primary">Guardar</button>
-                        </form>
-                    </div>
-                </div>
-                <div class="pb-5">
-                    <div class="product-item position-relative bg-light d-flex flex-column text-center col-lg-4">
-                        <img class="image_stock" src="img/product-3.png" alt="">
-                        <h6 class="text-uppercase">Quality Pet Foods</h6>
-                        <h5 class="text-primary mb-0">$150.000</h5>
-                        <form action="">
-                            <label for="stock_p3">Stock</label>
-                            <input type="number" name="stock_p3" id="stock_p3" class="stock_ammount">
-                            <button type="submit" class="btn btn-primary">Guardar</button>
-                            <br>
-                            <label for="price_p3">Precio  $:</label>
-                            <input type="number" name="price_p3" id="price_p3" class="price_product">
-                            <br>
-                        </form>
-                    </div>
-                </div>
-                <div class="pb-5">
-                    <div class="product-item position-relative bg-light d-flex flex-column text-center col-lg-4">
-                        <img class="image_stock" src="img/product-4.png" alt="">
-                        <h6 class="text-uppercase">Quality Pet Foods</h6>
-                        <h5 class="text-primary mb-0">$150.000</h5>
+    <!-- Inicio Stock Admin -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-10 col-sm-6 col-md-4 col-lg-4 product">
+                <div class="card">
+                    <img src="img/product-6.png" alt="">
+                    <h3 class="text-uppercase">Comida para perros <br>"Royal Canin" <br>Digestion Maxima <br>6KL</h6>
+                    <h3 class="text-primary mb-0">$18.990</h3>
+                    <center>
                         <form action="">
                             <label for="stock_p4">Stock</label>
                             <input type="number" name="stock_p4" id="stock_p4" class="stock_ammount">
@@ -197,111 +100,174 @@
                             <br>
                             <button type="submit" class="btn btn-primary">Guardar</button>
                         </form>
-                    </div>
+                    </center>
+                    <br><br>
                 </div>
-                <div class="pb-5">
-                    <div class="product-item position-relative bg-light d-flex flex-column text-center col-lg-4">
-                        <img class="image_stock" src="img/product-2.png" alt="">
-                        <h6 class="text-uppercase">Quality Pet Foods</h6>
-                        <h5 class="text-primary mb-0">$150.000</h5>
-                        <form action="">
-                            <label for="stock_p5">Stock</label>
-                            <input type="number" name="stock_p5" id="stock_p5" class="stock_ammount">
-                            <br>
-                            <label for="price_p1">Precio  $:</label>
-                            <input type="number" name="price_p5" id="price_p5" class="price_product">
-                            <br>
-                            <button type="submit" class="btn btn-primary">Guardar</button>
-                        </form>
-                    </div>
-                </div>
-        </div>
-    </div>
-    <!-- Products End -->
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-light mt-5 py-5">
-        <div class="container pt-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Contactanos</h5>
-                    <p class="mb-4">No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor</p>
-                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>Av. Matta 463, Región Metropolitana de Santiago, Chile</p>
-                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>Pet.Paradise@petparad.cl</p>
-                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+569 4588 2159</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Quick Links</h5>
-                    <div class="d-flex flex-column justify-content-start">
-                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Inicio</a>
-                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Acerca de nosotros</a>
-                        <!-- <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
-                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a> -->
-                        <a class="text-body" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contactanos1</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Links populares</h5>
-                    <div class="d-flex flex-column justify-content-start">
-                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Inicio</a>
-                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Acerca de nosotros</a>
-                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Nuestros servicios</a>
-                        <!-- <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
-                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a> -->
-                        <a class="text-body" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contactanos</a>
-                    </div>
-                </div>
-                <!-- <div class="col-lg-3 col-md-6">
-                    <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Newsletter</h5>
-                    <form action="">
-                        <div class="input-group">
-                            <input type="text" class="form-control p-3" placeholder="Your Email">
-                            <button class="btn btn-primary">Sign Up</button>
-                        </div>
-                    </form>
-                    <h6 class="text-uppercase mt-4 mb-3">Follow Us</h6>
-                    <div class="d-flex">
-                        <a class="btn btn-outline-primary btn-square me-2" href="#"><i class="bi bi-twitter"></i></a>
-                        <a class="btn btn-outline-primary btn-square me-2" href="#"><i class="bi bi-facebook"></i></a>
-                        <a class="btn btn-outline-primary btn-square me-2" href="#"><i class="bi bi-linkedin"></i></a>
-                        <a class="btn btn-outline-primary btn-square" href="#"><i class="bi bi-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="col-12 text-center text-body">
-                    <a class="text-body" href="">Terms & Conditions</a>
-                    <span class="mx-1">|</span>
-                    <a class="text-body" href="">Privacy Policy</a>
-                    <span class="mx-1">|</span>
-                    <a class="text-body" href="">Customer Support</a>
-                    <span class="mx-1">|</span>
-                    <a class="text-body" href="">Payments</a>
-                    <span class="mx-1">|</span>
-                    <a class="text-body" href="">Help</a>
-                    <span class="mx-1">|</span>
-                    <a class="text-body" href="">FAQs</a>
-                </div> -->
+                <br> <br>
             </div>
-        </div>
-    </div>
-    <div class="container-fluid bg-dark text-white-50 py-4">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-md-0">&copy; <a class="text-white" href="#">PetParadise</a>. All Rights Reserved.</p>
+                <div class="col-xs-10 col-sm-6 col-md-4 col-lg-4 product">
+                    <div class="card">
+                        <img src="img/product-9.png" alt="">
+                        <h3 class="text-uppercase">Comida para perros <br>"N&D" <br>Para perro pequeños<br>Sabor calabaza<br>4KL</h6>
+                        <h3 class="text-primary mb-0">$8.990</h3>
+                        <center>
+                            <form action="">
+                                <label for="stock_p4">Stock</label>
+                                <input type="number" name="stock_p4" id="stock_p4" class="stock_ammount">
+                                <br>
+                                <label for="price_p4">Precio  $:</label>
+                                <input type="number" name="price_p4" id="price_p4" class="price_product">
+                                <br>
+                                <button type="submit" class="btn btn-primary">Guardar</button>
+                            </form>
+                        </center>
+                        <br><br>
+                    </div>
+                    <br><br>
                 </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0">Designed by <a class="text-white" href="https://htmlcodex.com">HTML Codex</a></p>
+                <div class="col-xs-10 col-sm-6 col-md-4 col-lg-4 product">
+                    <div class="card">
+                        <img src="img/product-10.png" alt="">
+                        <h3 class="text-uppercase">Comida para perros "N&D"<br>Para perros pequeños<br>sabor granada<br>4KL</h6>
+                        <h3 class="text-primary mb-0">$8.990</h3>
+                        <center>
+                            <form action="">
+                                <label for="stock_p4">Stock</label>
+                                <input type="number" name="stock_p4" id="stock_p4" class="stock_ammount">
+                                <br>
+                                <label for="price_p4">Precio  $:</label>
+                                <input type="number" name="price_p4" id="price_p4" class="price_product">
+                                <br>
+                                <button type="submit" class="btn btn-primary">Guardar</button>
+                            </form>
+                        </center>
+                        <br><br>
+                    </div>
+                    <br><br>
                 </div>
-            </div>
+                <div class="col-xs-10 col-sm-6 col-md-4 col-lg-4 product">
+                    <div class="card">
+                        <img src="img/product-12.png" alt="">
+                        <h3 class="text-uppercase">Comida para gatos<br>"Whiskas"<br>Sabor atun <br>350gr</h6>
+                        <h3 class="text-primary mb-0">$6.990</h3>
+                        <center>
+                            <form action="">
+                                <label for="stock_p4">Stock</label>
+                                <input type="number" name="stock_p4" id="stock_p4" class="stock_ammount">
+                                <br>
+                                <label for="price_p4">Precio  $:</label>
+                                <input type="number" name="price_p4" id="price_p4" class="price_product">
+                                <br>
+                                <button type="submit" class="btn btn-primary">Guardar</button>
+                            </form>
+                        </center>
+                        <br><br>
+                    </div>
+                    <br><br>
+                </div>
+                <div class="col-xs-10 col-sm-6 col-md-4 col-lg-4 product">
+                    <div class="card">
+                        <img src="img/product-13.png" alt="">
+                        <h3 class="text-uppercase">Comida para gatos<br> "Whiskas" Sabor atun <br>3KL</h6>
+                        <h3 class="text-primary mb-0">$18.990</h3>
+                        <center>
+                            <form action="">
+                                <label for="stock_p4">Stock</label>
+                                <input type="number" name="stock_p4" id="stock_p4" class="stock_ammount">
+                                <br>
+                                <label for="price_p4">Precio  $:</label>
+                                <input type="number" name="price_p4" id="price_p4" class="price_product">
+                                <br>
+                                <button type="submit" class="btn btn-primary">Guardar</button>
+                            </form>
+                        </center>
+                        <br><br>
+                    </div>
+                    <br><br>
+                </div>
+                <div class="col-xs-10 col-sm-6 col-md-4 col-lg-4 product_2">
+                    <div class="card">
+                        <img src="img/product-14.png" alt="">
+                        <h3 class="text-uppercase">Comida para gatos <br>"Brit" <br>Adulto <br>5KL</h6>
+                        <h3 class="text-primary mb-0">$24.990</h3>
+                        <center>
+                            <form action="">
+                                <label for="stock_p4">Stock</label>
+                                <input type="number" name="stock_p4" id="stock_p4" class="stock_ammount">
+                                <br>
+                                <label for="price_p4">Precio  $:</label>
+                                <input type="number" name="price_p4" id="price_p4" class="price_product">
+                                <br>
+                                <button type="submit" class="btn btn-primary">Guardar</button>
+                            </form>
+                        </center>
+                        <br><br>
+                    </div>
+                    <br><br>
+                </div>
+                <div class="col-xs-10 col-sm-6 col-md-4 col-lg-4 product_3">
+                    <div class="card">
+                        <img src="img/product-15.png" alt="">
+                        <h3 class="text-uppercase">Comida para perros<br>"Purina"<br>Para champions <br>8KL</h6>
+                        <h3 class="text-primary mb-0">$19.990</h3>
+                        <center>
+                            <form action="">
+                                <label for="stock_p4">Stock</label>
+                                <input type="number" name="stock_p4" id="stock_p4" class="stock_ammount">
+                                <br>
+                                <label for="price_p4">Precio  $:</label>
+                                <input type="number" name="price_p4" id="price_p4" class="price_product">
+                                <br>
+                                <button type="submit" class="btn btn-primary">Guardar</button>
+                            </form>
+                        </center>
+                        <br><br>
+                    </div>
+                    <br><br>
+                </div>
+                <div class="col-xs-10 col-sm-6 col-md-4 col-lg-4 product">
+                    <div class="card">
+                        <img src="img/product-16.png" alt="">
+                        <h3 class="text-uppercase">Comida para gatos<br>"Yarrah"<br>sabor pollo <br>450gr</h6>
+                        <h3 class="text-primary mb-0"><br>$4.990</h3>
+                        <center>
+                            <form action="">
+                                <label for="stock_p4">Stock</label>
+                                <input type="number" name="stock_p4" id="stock_p4" class="stock_ammount">
+                                <br>
+                                <label for="price_p4">Precio  $:</label>
+                                <input type="number" name="price_p4" id="price_p4" class="price_product">
+                                <br>
+                                <button type="submit" class="btn btn-primary">Guardar</button>
+                            </form>
+                        </center>
+                        <br><br>
+                    </div>
+                    <br><br>
+                </div>
+                <div class="col-xs-10 col-sm-6 col-md-4 col-lg-4 product">
+                    <div class="card">
+                        <img src="img/product-17.png" alt="">
+                        <h3 class="text-uppercase">Comida para gatos<br>"9Lives"<br> Full proteina <br>6KL</h6>
+                        <h3 class="text-primary mb-0">$17.990</h3>
+                        <center>
+                            <form action="">
+                                <label for="stock_p4">Stock</label>
+                                <input type="number" name="stock_p4" id="stock_p4" class="stock_ammount">
+                                <br>
+                                <label for="price_p4">Precio  $:</label>
+                                <input type="number" name="price_p4" id="price_p4" class="price_product">
+                                <br>
+                                <button type="submit" class="btn btn-primary">Guardar</button>
+                            </form>
+                        </center>
+                        <br><br>
+                    </div>
+                    <br><br>
+                </div>
         </div>
-    </div>
-    <!-- Footer End -->
-
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-primary py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div> 
+    <!-- Fin producto Admin -->
 
 
     <!-- JavaScript Libraries -->

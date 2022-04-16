@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>PET PARADISE - Registro</title>
+    <title>PetParadise - Registro</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -86,7 +86,6 @@
             <div class="navbar-nav ms-auto py-0">
                 <a href="index.html" class="nav-item nav-link active">Inicio</a>
                 <a href="about.html" class="nav-item nav-link">Acerca de nosotros</a>
-                <a href="service.html" class="nav-item nav-link">Nuestros servicios</a>
                 <a href="product.html" class="nav-item nav-link">Nuestros productos</a>
                 <a href="perfil.html" class="nav-item nav-link">Mi perfil</a>
                 <div class="nav-item dropdown">
@@ -95,13 +94,10 @@
                         <a href="suscription.html" class="dropdown-item">Suscribirse</a>
                         <a href="contact.html" class="dropdown-item">Contactanos</a>
                         <a href="historialClienteMenu.html" class="dropdown-item">Historial de compra</a>
-                        <a href="shopcart.html" class="dropdown-item">Carrito de compra</a>
-                        <!-- <a href="testimonial.html" class="dropdown-item">Testimonios de clientes</a> -->
-                        <!-- <a href="blog.html" class="dropdown-item">Blog Grid</a> -->
-                        <!-- <a href="detail.html" class="dropdown-item">Blog Detail</a> -->
                     </div>
                 </div>
-                <a href="register.html" class="nav-item nav-link nav-contact bg-primary text-white px-5 ms-lg-5">Registrarse / Iniciar Sesión <i class="bi bi-arrow-right"></i></a>
+                <a href="register.html" class="nav-item nav-link nav-contact bg-primary text-white px-5 ms-lg-5">Registrarse<i class="bi bi-arrow-right"></i></a>
+                <a href="inicioSesion.html" class="nav-item nav-link nav-contact bg-primary text-white px-5 ms-lg-5">Iniciar Sesión <i class="bi bi-arrow-right"></i></a>
             </div>
         </div>
     </nav>
@@ -120,25 +116,28 @@
                     <form>
                         <div class="row g-3">
                             <div class="col-12">
-                                <input type="text" class="form-control bg-light border-0 px-4" placeholder="Nombre" style="height: 55px;">
+                                <input type="text" class="form-control bg-light border-0 px-4" placeholder="Nombre" style="height: 55px;" id="nombre" name="nombre">
                             </div>
                             <div class="col-12">
-                                <input type="email" class="form-control bg-light border-0 px-4" placeholder="Email" style="height: 55px;">
+                                <input type="email" class="form-control bg-light border-0 px-4" placeholder="Email" style="height: 55px;" id="email" name="email">
                             </div>
                             <div class="col-12">
-                                <input class="form-control bg-light border-0 px-4 py-3"  placeholder="Telefono de contacto">
+                                <input class="form-control bg-light border-0 px-4 py-3"  placeholder="Telefono de contacto" id="telefono" name="telefono">
                             </div>
                             <div class="col-12">
-                                <input type="text" class="form-control bg-light border-0 px-4" placeholder="Region" style="height: 55px;">
+                                <input type="text" class="form-control bg-light border-0 px-4" placeholder="Region" style="height: 55px; " id="region" name="region">
                             </div>
                             <div class="col-12">
-                                <input type="text" class="form-control bg-light border-0 px-4" placeholder="Dirección" style="height: 55px;">
+                                <input class="form-control bg-light border-0 px-4 py-3"  placeholder="RUT" id="rut" name="rut">
                             </div>
                             <div class="col-12">
-                                <input class="form-control bg-light border-0 px-4 py-3"  placeholder="Contraseña">
+                                <input type="text" class="form-control bg-light border-0 px-4" placeholder="Dirección" style="height: 55px;" id="direccion" name="direccion">
                             </div>
                             <div class="col-12">
-                                <input class="form-control bg-light border-0 px-4 py-3"  placeholder="Confirmar contraseña">
+                                <input class="form-control bg-light border-0 px-4 py-3"  placeholder="Contraseña" id="contraseña" name="contraseña">
+                            </div>
+                            <div class="col-12">
+                                <input class="form-control bg-light border-0 px-4 py-3"  placeholder="Confirmar contraseña" id="contraseñaConfirm" name="contraseñaConfirm">
                             </div>
                             <div class="col-12">
                                 <center>
@@ -147,29 +146,6 @@
                             </div>
                         </div>
                     </form>
-                </div>
-                <div class="col-lg-4">
-                    <div class="bg-light mb-5 p-5">
-                        <div class="d-flex align-items-center mb-2">
-                            <form>
-                                <div class="row g-3">
-                                    <div class="col-12" style="border: solid black 2px;">
-                                        <input type="email" class="form-control bg-light border-0 px-4" placeholder="Email" style="height: 55px;">
-                                    </div>
-                                    <div class="col-12" style="border: solid black 2px;">
-                                        <input type="text" class="form-control bg-light border-0 px-4" placeholder="Contraseña" style="height: 55px;">
-                                    </div>
-                                    <div class="col-12">
-                                        <center>
-                                            <a href="perfil.html" class="btn btn-primary text-uppercase py-2 px-4 my-3"> Iniciar Sesion</a>
-                                        </center>
-                                    </div>
-                                </div>
-                            </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 </div>
             </div>
         </div>

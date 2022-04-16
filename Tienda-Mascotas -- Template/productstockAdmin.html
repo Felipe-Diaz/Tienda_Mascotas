@@ -1,221 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <title>Pet Paradise - Productos en stock</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+  <head>
+    <meta charset="utf-8" />
+    <title>Pet Paradise - Admin - Productos</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Free HTML Templates" name="keywords" />
+    <meta content="Free HTML Templates" name="description" />
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/favicon.ico" rel="icon" />
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap" rel="stylesheet">  
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
 
-<body>
-
+  <body>
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-3">
-        <a href="index.html" class="navbar-brand ms-lg-4">
-            <h1 class="m-0 text-uppercase text-dark"><i class="text-primary"></i>Administrador</h1>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-0">
-                <a href="developer.html" class="nav-item nav-link">Administrador</a>
-                <a href="user.html" class="nav-item nav-link">Usuarios</a>
-                <a href="productstockAdmin.html" class="nav-item nav-link active">Stock</a>
-                <a href="saleshistory.html" class="nav-item nav-link">Historial</a>
-                <a href="index.html" class="nav-item nav-link">Inicio</a>
-            </div>
+    <nav
+      class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-3"
+    >
+      <a href="index.html" class="navbar-brand ms-lg-4">
+        <h1 class="m-0 text-uppercase text-dark">
+          <i class="text-primary"></i>Administrador
+        </h1>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto py-0">
+          <a href="developer.html" class="nav-item nav-link">Administrador</a>
+          <a href="user.html" class="nav-item nav-link">Usuarios</a>
+          <a href="productstockAdmin.html" class="nav-item nav-link active"
+            >Productos</a
+          >
+          <a href="saleshistory.html" class="nav-item nav-link">Historial</a>
+          <a href="index.html" class="nav-item nav-link">Inicio</a>
         </div>
+      </div>
     </nav>
     <!-- Navbar End -->
 
     <!-- Inicio Stock Admin -->
-    <br>
+    <br />
     <div class="container-xl">
-        <div class="table">
-            <div class="table-wrapper">
-                <div class="table-title">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <h2>Administrador de productos</h2>
-                        </div>
-                    </div>
-                </div>
-                <table class="table table-hover">
-                    <thead>
-                        <tr>
-                            <th>ID producto</th>
-                            <th>Nombre</th>						
-                            <th>Descripción</th>
-                            <th>Precio</th>
-                            <th><center> Descuento suscriptor</center></th>
-                            <th>Oferta</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr style="vertical-align: middle;">
-                            <td><a href="productstockAdminEdit.html">#1001</a></td>
-                            <td> Comida Perro</td>
-                            <td>Comida para perros <br>"Royal Canin" <br>Digestion Maxima <br>6KL</td>                        
-                            <td>$20000</td>
-                            <td><center>5%</center></td>
-                            <td>20%</td>
-                        </tr>
-                        <tr style="vertical-align: middle;">
-                            <td><a href="productstockAdminEdit.html">#1002</a></td>
-                            <td> Comida Perro</td>
-                            <td>Comida para perros <br>"Royal Canin" <br>Digestion Maxima <br>6KL</td>                        
-                            <td>$20000</td>
-                            <td><center>5%</center></td>
-                            <td>20%</td>
-                        </tr>
-                        <tr style="vertical-align: middle;">
-                            <td><a href="productstockAdminEdit.html">#1003</a></td>
-                            <td> Comida Perro</td>
-                            <td>Comida para perros <br>"N&D" <br>Para perro pequeños<br>Sabor calabaza<br>4KL</td>                        
-                            <td>$20000</td>
-                            <td><center>5%</center></td>
-                            <td>20%</td>                                          
-                        </tr>
-                        <tr style="vertical-align: middle;">
-                            <td><a href="productstockAdminEdit.html">#1004</a></td>
-                            <td> Comida Perro</td>
-                            <td>Comida para perros "N&D"<br>Para perros pequeños<br>sabor granada<br>4KL</td>                        
-                            <td>$20000</td>
-                            <td><center>5%</center></td>
-                            <td>20%</td>
-                        </tr>
-                        <tr style="vertical-align: middle;">
-                            <td><a href="productstockAdminEdit.html">#1005</a></td>
-                            <td> Comida Perro</td>
-                            <td>Comida para perros <br>"Royal Canin" <br>Digestion Maxima <br>6KL</td>                        
-                            <td>$20000</td>
-                            <td><center>5%</center></td>
-                            <td>20%</td>
-                        </tr>
-                        <tr style="vertical-align: middle;">
-                            <td><a href="productstockAdminEdit.html">#1006</a></td>
-                            <td> Comida Perro</td>
-                            <td>Comida para perros <br>"Royal Canin" <br>Digestion Maxima <br>6KL</td>                        
-                            <td>$20000</td>
-                            <td><center>5%</center></td>
-                            <td>20%</td>
-                        </tr>
-                        <tr style="vertical-align: middle;">
-                            <td><a href="productstockAdminEdit.html">#1007</a></td>
-                            <td> Comida Perro</td>
-                            <td>Comida para perros <br>"Royal Canin" <br>Digestion Maxima <br>6KL</td>                        
-                            <td>$20000</td>
-                            <td><center>5%</center></td>
-                            <td>20%</td>
-                        </tr>
-                        <tr style="vertical-align: middle;">
-                            <td><a href="productstockAdminEdit.html">#1008</a></td>
-                            <td> Comida Perro</td>
-                            <td>Comida para perros <br>"Royal Canin" <br>Digestion Maxima <br>6KL</td>                        
-                            <td>$20000</td>
-                            <td><center>5%</center></td>
-                            <td>20%</td>
-                        </tr>
-                        <tr style="vertical-align: middle;">
-                            <td><a href="productstockAdminEdit.html">#1009</a></td>
-                            <td> Comida Perro</td>
-                            <td>Comida para perros <br>"Royal Canin" <br>Digestion Maxima <br>6KL</td>                        
-                            <td>$20000</td>
-                            <td><center>5%</center></td>
-                            <td>20%</td>
-                        </tr>
-                        <tr style="vertical-align: middle;">
-                            <td><a href="productstockAdminEdit.html">#1010</a></td>
-                            <td> Comida Perro</td>
-                            <td>Comida para perros <br>"Royal Canin" <br>Digestion Maxima <br>6KL</td>                        
-                            <td>$20000</td>
-                            <td><center>5%</center></td>
-                            <td>20%</td>
-                        </tr>
-                        <tr style="vertical-align: middle;">
-                            <td><a href="productstockAdminEdit.html">#1011</a></td>
-                            <td> Comida Perro</td>
-                            <td>Comida para perros <br>"Royal Canin" <br>Digestion Maxima <br>6KL</td>                        
-                            <td>$20000</td>
-                            <td><center>5%</center></td>
-                            <td>20%</td>
-                        </tr>
-                        <tr style="vertical-align: middle;">
-                            <td><a href="productstockAdminEdit.html">#1012</a></td>
-                            <td> Comida Perro</td>
-                            <td>Comida para perros <br>"Royal Canin" <br>Digestion Maxima <br>6KL</td>                        
-                            <td>$20000</td>
-                            <td><center>5%</center></td>
-                            <td>20%</td>
-                        </tr>
-                        <tr style="vertical-align: middle;">
-                            <td><a href="productstockAdminEdit.html">#1013</a></td>
-                            <td> Comida Perro</td>
-                            <td>Comida para perros <br>"Royal Canin" <br>Digestion Maxima <br>6KL</td>                        
-                            <td>$20000</td>
-                            <td><center>5%</center></td>
-                            <td>20%</td>
-                        </tr>
-                        <tr style="vertical-align: middle;">
-                            <td><a href="productstockAdminEdit.html">#1014</a></td>
-                            <td> Comida Perro</td>
-                            <td>Comida para perros <br>"Royal Canin" <br>Digestion Maxima <br>6KL</td>                        
-                            <td>$20000</td>
-                            <td><center>5%</center></td>
-                            <td>20%</td>
-                        </tr>
-                        <tr style="vertical-align: middle;">
-                            <td><a href="productstockAdminEdit.html">#1015</a></td>
-                            <td> Comida Perro</td>
-                            <td>Comida para perros <br>"Royal Canin" <br>Digestion Maxima <br>6KL</td>                        
-                            <td>$20000</td>
-                            <td><center>5%</center></td>
-                            <td>20%</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="clearfix">
-                    <div class="hint-text">Mostrando <b>15</b> de <b>50</b> productos</div>
-                    <br>
-                    <ul class="pagination">
-                        <li class="page-item disabled"><a href="#" class="page-link">Previous</a></li>
-                        <li class="page-item active"><a href="#" class="page-link">1</a></li>
-                        <li class="page-item"><a href="#" class="page-link">2</a></li>
-                        <li class="page-item"><a href="#" class="page-link">3</a></li>
-                        <li class="page-item"><a href="#" class="page-link">4</a></li>
-                        <li class="page-item"><a href="#" class="page-link">5</a></li>
-                        <li class="page-item"><a href="#" class="page-link">Next</a></li>
-                    </ul>
-                </div>
-                <br>
+      <div class="table">
+        <div class="table-wrapper">
+          <div class="table-title">
+            <div class="row">
+              <div class="col-sm-6">
+                <h2>Administrador de productos</h2>
+              </div>
             </div>
+          </div>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>ID producto</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th><center>Descuento suscriptor</center></th>
+                <th>Oferta</th>
+                <th>Stock</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="vertical-align: middle">
+                <td><a href="productstockAdminEdit.html">#1001</a></td>
+                <td>Comida Perro</td>
+                <td>
+                  Comida para perros <br />"Royal Canin" <br />Digestion Maxima
+                  <br />6KL
+                </td>
+                <td>$20000</td>
+                <td><center>5%</center></td>
+                <td>20%</td>
+                <td><a href="productstockAdminStock.html">1 Unidades</a></td>
+              </tr>
+              <tr style="vertical-align: middle">
+                <td><a href="productstockAdminEdit.html">#1002</a></td>
+                <td>Comida Perro</td>
+                <td>
+                  Comida para perros <br />"Royal Canin" <br />Digestion Maxima
+                  <br />6KL
+                </td>
+                <td>$20000</td>
+                <td><center>5%</center></td>
+                <td>20%</td>
+                <td><a href="productstockAdminStock.html">5 Unidades</a></td>
+              </tr>
+              <tr style="vertical-align: middle">
+                <td><a href="productstockAdminEdit.html">#1003</a></td>
+                <td>Comida Perro</td>
+                <td>
+                  Comida para perros <br />"N&D" <br />Para perro pequeños<br />Sabor
+                  calabaza<br />4KL
+                </td>
+                <td>$20000</td>
+                <td><center>5%</center></td>
+                <td>20%</td>
+                <td><a href="productstockAdminStock.html">8 Unidades</a></td>
+              </tr>
+              <tr style="vertical-align: middle">
+                <td><a href="productstockAdminEdit.html">#1004</a></td>
+                <td>Comida Perro</td>
+                <td>
+                  Comida para perros "N&D"<br />Para perros pequeños<br />sabor
+                  granada<br />4KL
+                </td>
+                <td>$20000</td>
+                <td><center>5%</center></td>
+                <td>20%</td>
+                <td><a href="productstockAdminStock.html">2 Unidades</a></td>
+              </tr>
+              <tr style="vertical-align: middle">
+                <td><a href="productstockAdminEdit.html">#1005</a></td>
+                <td>Comida Perro</td>
+                <td>
+                  Comida para perros <br />"Royal Canin" <br />Digestion Maxima
+                  <br />6KL
+                </td>
+                <td>$20000</td>
+                <td><center>5%</center></td>
+                <td>20%</td>
+                <td><a href="productstockAdminStock.html">1 Unidades</a></td>
+              </tr>
+              <tr style="vertical-align: middle">
+                <td><a href="productstockAdminEdit.html">#1006</a></td>
+                <td>Comida Perro</td>
+                <td>
+                  Comida para perros <br />"Royal Canin" <br />Digestion Maxima
+                  <br />6KL
+                </td>
+                <td>$20000</td>
+                <td><center>5%</center></td>
+                <td>20%</td>
+                <td><a href="productstockAdminStock.html">1 Unidades</a></td>
+              </tr>
+              <tr style="vertical-align: middle">
+                <td><a href="productstockAdminEdit.html">#1007</a></td>
+                <td>Comida Perro</td>
+                <td>
+                  Comida para perros <br />"Royal Canin" <br />Digestion Maxima
+                  <br />6KL
+                </td>
+                <td>$20000</td>
+                <td><center>5%</center></td>
+                <td>20%</td>
+                <td><a href="productstockAdminStock.html">8 Unidades</a></td>
+              </tr>
+              <tr style="vertical-align: middle">
+                <td><a href="productstockAdminEdit.html">#1008</a></td>
+                <td>Comida Perro</td>
+                <td>
+                  Comida para perros <br />"Royal Canin" <br />Digestion Maxima
+                  <br />6KL
+                </td>
+                <td>$20000</td>
+                <td><center>5%</center></td>
+                <td>20%</td>
+                <td><a href="productstockAdminStock.html">1 Unidades</a></td>
+              </tr>
+              <tr style="vertical-align: middle">
+                <td><a href="productstockAdminEdit.html">#1009</a></td>
+                <td>Comida Perro</td>
+                <td>
+                  Comida para perros <br />"Royal Canin" <br />Digestion Maxima
+                  <br />6KL
+                </td>
+                <td>$20000</td>
+                <td><center>5%</center></td>
+                <td>20%</td>
+                <td><a href="productstockAdminStock.html">2 Unidades</a></td>
+              </tr>
+              <tr style="vertical-align: middle">
+                <td><a href="productstockAdminEdit.html">#1010</a></td>
+                <td>Comida Perro</td>
+                <td>
+                  Comida para perros <br />"Royal Canin" <br />Digestion Maxima
+                  <br />6KL
+                </td>
+                <td>$20000</td>
+                <td><center>5%</center></td>
+                <td>20%</td>
+                <td><a href="productstockAdminStock.html">2 Unidades</a></td>
+              </tr>
+              <tr style="vertical-align: middle">
+                <td><a href="productstockAdminEdit.html">#1011</a></td>
+                <td>Comida Perro</td>
+                <td>
+                  Comida para perros <br />"Royal Canin" <br />Digestion Maxima
+                  <br />6KL
+                </td>
+                <td>$20000</td>
+                <td><center>5%</center></td>
+                <td>20%</td>
+                <td><a href="productstockAdminStock.html">2 Unidades</a></td>
+              </tr>
+              <tr style="vertical-align: middle">
+                <td><a href="productstockAdminEdit.html">#1012</a></td>
+                <td>Comida Perro</td>
+                <td>
+                  Comida para perros <br />"Royal Canin" <br />Digestion Maxima
+                  <br />6KL
+                </td>
+                <td>$20000</td>
+                <td><center>5%</center></td>
+                <td>20%</td>
+                <td><a href="productstockAdminStock.html">3 Unidades</a></td>
+              </tr>
+              <tr style="vertical-align: middle">
+                <td><a href="productstockAdminEdit.html">#1013</a></td>
+                <td>Comida Perro</td>
+                <td>
+                  Comida para perros <br />"Royal Canin" <br />Digestion Maxima
+                  <br />6KL
+                </td>
+                <td>$20000</td>
+                <td><center>5%</center></td>
+                <td>20%</td>
+                <td><a href="productstockAdminStock.html">4 Unidades</a></td>
+              </tr>
+              <tr style="vertical-align: middle">
+                <td><a href="productstockAdminEdit.html">#1014</a></td>
+                <td>Comida Perro</td>
+                <td>
+                  Comida para perros <br />"Royal Canin" <br />Digestion Maxima
+                  <br />6KL
+                </td>
+                <td>$20000</td>
+                <td><center>5%</center></td>
+                <td>20%</td>
+                <td><a href="productstockAdminStock.html">2 Unidades</a></td>
+              </tr>
+              <tr style="vertical-align: middle">
+                <td><a href="productstockAdminEdit.html">#1015</a></td>
+                <td>Comida Perro</td>
+                <td>
+                  Comida para perros <br />"Royal Canin" <br />Digestion Maxima
+                  <br />6KL
+                </td>
+                <td>$20000</td>
+                <td><center>5%</center></td>
+                <td>20%</td>
+                <td><a href="productstockAdminStock.html">3 Unidades</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="clearfix">
+            <div class="hint-text">
+              Mostrando <b>15</b> de <b>50</b> productos
+            </div>
+            <br />
+            <ul class="pagination">
+              <li class="page-item disabled">
+                <a href="#" class="page-link">Previous</a>
+              </li>
+              <li class="page-item active">
+                <a href="#" class="page-link">1</a>
+              </li>
+              <li class="page-item"><a href="#" class="page-link">2</a></li>
+              <li class="page-item"><a href="#" class="page-link">3</a></li>
+              <li class="page-item"><a href="#" class="page-link">4</a></li>
+              <li class="page-item"><a href="#" class="page-link">5</a></li>
+              <li class="page-item"><a href="#" class="page-link">Next</a></li>
+            </ul>
+          </div>
+          <br />
         </div>
+      </div>
     </div>
     <!-- Fin producto Admin -->
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -226,6 +307,5 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>

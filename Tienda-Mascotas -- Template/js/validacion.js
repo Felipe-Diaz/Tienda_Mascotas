@@ -1,4 +1,62 @@
-$('#idRegistro').validate(
+$("#editProducto").validate(
+    {
+        "rules":
+        {
+            "txtNombreProducto":
+            {
+                required: true,
+            },
+            "txtDescripcionProducto":
+            {
+                required: true
+            },
+            "txtPrecioProducto":
+            {
+                required: true,
+                min: 1
+            },
+            "descuentoProductoSus":
+            {
+                required: true,
+                min: 1
+            },
+            "ofertaProducto":
+            {
+                required: true,
+                min: 0
+            }
+        },
+        messages:
+        {
+            "txtNombreProducto":
+            {
+                required: 'Este campo es obligatorio',
+            },
+            "txtDescripcionProducto":
+            {
+                required: 'Este campo es obligatorio'
+            },
+            "txtPrecioProducto":
+            {
+                required: 'Este campo es olbigatorio',
+                min: 'El precio debe ser mínimo 1'
+            },
+            "descuentoProductoSus":
+            {
+                required: 'Este campo es obligatorio',
+                min: 'Este valor debe ser mínimo 1'
+            },
+            "ofertaProducto":
+            {
+                required: 'Este campo es obligatorio (Si no desea colocar oferta coloque 0)',
+                min: 'Debe ser un valor mayor o igual a 0'
+            }
+        }
+    }
+)
+
+
+$("#idRegistro").validate(
     { 
         "rules": 
             {
@@ -24,8 +82,7 @@ $('#idRegistro').validate(
                 "txtRut":
                     {
                         required: true,
-                        minlength: 11,
-                        maxlength: 15
+                        maxlength: 10
                     },
                 "txtDireccion":
                     {
@@ -67,8 +124,7 @@ $('#idRegistro').validate(
                 "txtRut":
                     {
                         required: 'El RUT es un campo obligatorio',
-                        minlength: 'El rut debe estar entre 11 y 15 valores (SIN puntos y CON guion)',
-                        maxlength: 'El rut debe estar entre 11 y 15 valores (SIN puntos y CON guion)'
+                        maxlength: 'El rut debe tener como máximo 10 caracteres (SIN puntos y CON guion)'
                     },
                 "txtDireccion":
                     {
@@ -88,3 +144,112 @@ $('#idRegistro').validate(
             },
     }
 );
+
+$("#StockProducto").validate(
+    {
+        "rules":
+            {
+                "txtIDStock": 
+                    {
+                        required: true,
+                        min: 20
+                    },
+                "txtStockProdEspecifico":
+                    {
+                        required: true,
+                        min: 1
+                    },
+            },
+        messages:
+            {
+                "txtIDStock":
+                    {
+                        required: 'Este valor es obligatorio',
+                        min: 'No debe tener una ID anterior'
+                    },
+                "txtStockProdEspecifico":
+                    {
+                        required: 'Este valor es obligatorio',
+                        min: 'Debe ser 1 o mayor'
+                    }
+            }
+
+    }
+)
+
+
+function validateEmail(email) {
+    var re = /\S+@\S+\.\S+/;
+    return re.test(email);
+}
+
+// Valida el rut con su cadena completa "XXXXXXXX-X"
+function validateRut(rutCompleto) {
+    if (!/^[0-9]+-[0-9kK]{1}$/.test(rutCompleto))
+        return false;
+    var tmp = rutCompleto.split('-');
+    var rut = tmp[0];
+    var digv = tmp[1]; 
+    if (digv == 'k') digv = 'K' ;
+    return (dv(rut) == digv );
+}
+
+function dv(T) {
+    var M=0,S=1;
+    for(; T; T = Math.floor(T/10))
+        S=(S + T % 10 * (9 - M++ %6))%11;
+    return S?S-1:'k';
+}
+
+// Uso de la función validateRut
+// alert( Fn.validateRut('16560241-2') ? 'válido' : 'inválido');
+
+$.validator.addMethod(
+    "validateemail",
+    function(value, element, validate) {
+        debugger
+        if (validate) {
+            return validateEmail(value);
+        }
+    },
+    "Formato de correo incorrecto"
+);
+
+$.validator.addMethod(
+    "onenumber",
+    function(value, element, validate) {
+        if (validate) {
+            var re = new RegExp('.*[0-9].*');
+            resp = re.test(value);
+            return resp;
+        }
+    },
+    "La contraseña debe contener al menos un número"
+);
+
+$.validator.addMethod(
+    "onemayus",
+    function(value, element, validate) {
+        if (validate) {
+            var re = new RegExp('.*[A-Z].*');
+            resp = re.test(value);
+            return resp;
+        }
+    },
+    "La contraseña debe contener al menos una mayúscula"
+);
+
+$.validator.addMethod(
+    "rut",
+    function(value, element, validate) {
+        if (validate) {
+            return validateRut(value);
+        }
+    },
+    "El formato del rut no es válido"
+);
+
+$("#txtRut").rules("add", { rut: true });
+$("#txtEmail").rules("add", { validateemail: true });
+$("#txtContrasena").rules("add", { onenumber: true });
+$("#txtContrasena").rules("add", { onemayus: true });

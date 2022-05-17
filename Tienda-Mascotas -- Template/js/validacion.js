@@ -277,6 +277,50 @@ $("#StockProducto").validate(
     }
 )
 
+$("contactoFormulario").validate(
+    {
+        "rules":
+        {
+            "nombreContacto":
+                {
+                    required: true
+                },
+            "emailContacto": 
+                {
+                    email: true,
+                    required: true
+                },
+            "temaContacto":
+                {
+                    required: true
+                },
+            "mensajeContacto":
+                {
+                    required: true
+                }
+        },
+        messages:
+        {
+            "nombreContacto":
+                {
+                    required: 'Este dato es obligatorio'
+                },
+            "emailContacto": 
+                {
+                    email: 'Este dato debe ser un email',
+                    required: 'Este dato es obligatorio'
+                },
+            "temaContacto":
+                {
+                    required: 'Este dato es obligatorio'
+                },
+            "mensajeContacto":
+                {
+                    required: 'Este dato es obligatorio'
+                }
+        }
+    }
+)
 
 function validateEmail(email) {
     var re = /\S+@\S+\.\S+/;

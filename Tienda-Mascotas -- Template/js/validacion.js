@@ -152,7 +152,8 @@ $("#idLogin").validate(
                 "txtEmail": 
                     {
                         required: true,
-                        email: true
+                        email: true,
+                        minlength:1
                     },
                 "txtContrasena":
                     {
@@ -165,7 +166,8 @@ $("#idLogin").validate(
                 "txtEmail": 
                     {
                         required: 'El email es un campo requerido',
-                        email: 'El email no cumple el formato de un correo'
+                        email: 'El email no cumple el formato de un correo',
+                        minlength: 'Debe tener como mínimo 1 caracteres'
                     },
                 "txtContrasena":
                     {

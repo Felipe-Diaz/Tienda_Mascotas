@@ -63,32 +63,23 @@
 <body>
 
     <!-- Navbar Start -->
-    <nav
-      class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-3"
-    >
+    
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-3">
       <a href="index.html" class="navbar-brand ms-lg-4">
-        <h1 class="m-0 text-uppercase text-dark">
-          <i class="text-primary"></i>Administrador
-        </h1>
+          <h1 class="m-0 text-uppercase text-dark"><i class="text-primary"></i>Administrador</h1>
       </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-      >
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto py-0">
-          <a href="developer.html" class="nav-item nav-link">Administrador</a>
-          <a href="user.html" class="nav-item nav-link">Usuarios</a>
-          <a href="productstockAdmin.html" class="nav-item nav-link active"
-            >Productos</a
-          >
-          <a href="saleshistory.html" class="nav-item nav-link">Historial</a>
-          <a href="index.html" class="nav-item nav-link">Inicio</a>
-        </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-0">
+              <a href="developer.html" class="nav-item nav-link">Administrador</a>
+              <a href="user.html" class="nav-item nav-link active">Usuarios</a>
+              <a href="productstockAdmin.html" class="nav-item nav-link">Productos</a>
+              <a href="saleshistory.html" class="nav-item nav-link">Historial</a>
+              <a href="storage.html" class="nav-item nav-link">Bodega</a>
+              <a href="index.html" class="nav-item nav-link">Salir</a>
+          </div>
       </div>
     </nav>
     <!-- Navbar End -->
@@ -99,76 +90,81 @@
     <div class="container-fluid pt-5">
         <div class="container">
             <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 600px;">
-                <h1 class="display-5 text-uppercase mb-0">DATOS DEL PRODUCTO: </h1>
+                <h1 class="display-5 text-uppercase mb-0">STOCK DEL PRODUCTO: [NOMBRE PRODUCTO]</h1>
             </div>
             <div class="row g-5">
                 <section style="background-color: #fff;">
                   <br>
                   <div class="container-xl">
-                    <div class="row">
-                      <div class="col-lg-4 offset-4">
-                          <div class="card mb-4">
-                              <div class="card-body text-center">
-                                  <img src="img/product-1.png" alt="avatar" class="img-fluid" style="width: 150px;">
-                                  <h5 class="my-3">#1001</h5>
-                                  <p class="text-muted mb-1">Royal Canin <br> Comida para perros <br />"Royal Canin" <br />Digestion Maxima
-                                    <br />6KL</p>
-                                  <p class="text-muted mb-4">$20000</p>
+                      <div class="row">
+                          <div class="col-lg-4 offset-4">
+                              <div class="card mb-4">
+                                  <div class="card-body text-center">
+                                      <img src="img/product-1.png" alt="avatar" class="img-fluid" style="width: 150px;">
+                                      <h5 class="my-3">#1001</h5>
+                                      <p class="text-muted mb-1">Royal Canin <br> Comida para perros <br />"Royal Canin" <br />Digestion Maxima
+                                        <br />6KL</p>
+                                      <p class="text-muted mb-4">$20000</p>
+                                  </div>
                               </div>
-                          </div>
-                    </div>
-                      <form  id="editProducto" name="editProducto" method="post" action="productstockAdmin.html"> 
-                        <div class="col-lg-7">
+                      </div>
+                      <form  id="StockProducto" name="StockProducto" method="post" action="productstockAdmin.html"> 
+                        <div class="col-lg-6">
                             <div class="card mb-5">
                                 <div class="card-body">
                                 <div class="row">
                                 <div class="col-sm-4">
-                            <label for="txtNombreProducto">Nombre producto</label>
+                            <label for="txtIDStock">ID Stock</label>
                           </div>
                           <div class="col-sm-8">
-                            <input type="text" name="txtNombreProducto" id="txtNombreProducto" placeholder="Nombre producto " class="stock_ammount">
+                            <input type="number" name="txtIDStock" id="txtIDStock" placeholder="Id Stock " class="stock_ammount">
                           </div>
                         </div>
                         <hr>
                         <div class="row">
                           <div class="col-sm-4">
-                            <label for="txtDescripcionProducto"> Descripción</label>
+                            <label for="estadoEntregaProd">Categoría</label>
                           </div>
                           <div class="col-sm-8">
-                            <input type="text" name="txtDescripcionProducto" id="txtDescripcionProducto" placeholder="Descripción del producto" class="stock_ammount">
+                            <select name="estadoEntregaProd" id="estadoEntregaProd" class="stock_ammount">
+                              <option value="1">Gato</option>
+                              <option value="2">Perro</option>
+                              <option value="3">Conejo</option>
+                              <option value="4">Ave</option>
+                            </select>
                           </div>
-                        </div>
+                        </div> 
                         <hr>
                         <div class="row">
                           <div class="col-sm-4">
-                            <label for="txtPrecioProducto">Precio</label>
+                            <label for="estadoEntregaProd">Nombre</label>
                           </div>
                           <div class="col-sm-8">
-                            $<input type="number" name="txtPrecioProducto" id="txtPrecioProducto" placeholder="Precio Producto" class="stock_ammount">
+                            <select name="estadoEntregaProd" id="estadoEntregaProd" class="stock_ammount">
+                              <option value="1">Comida 1 Gato</option>
+                              <option value="2">Comida 2 Gato</option>
+                              <option value="3">Comida 3 Gato</option>
+                              <option value="4">Comida 4 Gato</option>
+                            </select>
                           </div>
-                        </div>
+                        </div> 
                         <hr>
-                        <div class="row">
-                            <div class="col-sm-4">
-                              <label for="descuentoProductoSus">Descuento</label>
-                            </div>
-                            <div class="col-sm-8">
-                              %<input type="number" name="descuentoProductoSus" id="descuentoProductoSus" placeholder="Descuento suscriptor" class="stock_ammount">
-                            </div>
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="txtStockProdEspecifico">Cantidad</label>
                         </div>
-                        <hr>
-                        <div class="row">
-                          <div class="col-sm-4">
-                            <label for="ofertaProducto">Oferta</label>
-                          </div>
-                          <div class="col-sm-8">
-                            %<input type="number" name="ofertaProducto" id="ofertaProducto" placeholder="Oferta para todos" class="stock_ammount">
-                          </div>
-                          <div>
+                        <div class="col-sm-8">
+                          <input type="number" name="txtStockProdEspecifico" id="txtStockProdEspecifico" placeholder="Stock Producto" class="stock_ammount">
+                        </div>
+                      </div>
+                      <br>
+                      <hr>
+                        <div>
                           <center>
-                            <button class="btn btn-primary text-uppercase py-2 px-4 my-3" type="submit">Guardar</button>
+                              <button class="btn btn-primary text-uppercase py-2 px-4 my-3" type="submit" id="btnNuevo">Nuevo</button>
+                              &nbsp;
+                              <button class="btn btn-primary text-uppercase py-2 px-4 my-3" type="submit" id="btnEditar">Guardar</button>
                           </center>
-                          </div>
                         </div>
                       </form>
                     </div>
@@ -179,8 +175,156 @@
           </div>
         </div>
       </div>
-    </center>
+  </center>
     <!-- Fin producto Admin -->
+  <div class="container-xl">
+    <div class="table">
+      <div class="table-wrapper">
+        <div class="table-title">
+          <div class="row">
+            <div class="col-sm-6">
+              <h2>Administracion de Stock</h2>
+            </div>
+          </div>
+        </div>
+        <table class="table table-hover" id="tbUsuarioAdmin">
+          <thead>
+            <tr>
+              <th>ID producto</th>
+              <th>ID Stock</th>
+              <th>Nombre</th>
+              <th>Descripción</th>
+              <th>Estado</th>
+              <th>Eliminar</th>
+            </tr>
+          </thead>
+          <!--  -->
+          <tbody>
+            <tr style="vertical-align: middle">
+              <td>1001</td>
+              <td>
+                  <!-- <button class="btn btn-outline-link"></button>  -->
+                  0015
+              </td>
+              <td>Royal Canin</td>
+              <td>Comida para perros <br />"Royal Canin" <br />Digestion Maxima
+                <br />6KL</td>
+              <td>Entregado</td>
+              <td> 
+                <button class="btn btn-outline-link" id="btnEliminar">
+                  <img
+                  src="img/iconos/Button-ban.png"
+                  class="icon-btn"
+                  alt="ban"/>
+                </button>
+              </td>
+            </tr>
+            <tr style="vertical-align: middle">
+              <tr style="vertical-align: middle">
+                <td>1001</td>
+                <td>
+                    0016
+                </td>
+                <td>Royal Canin</td>
+                <td>Comida para perros <br />"Royal Canin" <br />Digestion Maxima
+                  <br />6KL</td>
+                <td>Entregado</td>
+                <td> 
+                  <button class="btn btn-outline-link" id="btnEliminar">
+                    <img
+                    src="img/iconos/Button-ban.png"
+                    class="icon-btn"
+                    alt="ban"/>
+                  </button>
+                </td>
+              </tr>
+            </tr>
+            <tr style="vertical-align: middle">
+              <tr style="vertical-align: middle">
+                <td>1001</td>
+                <td>
+                    0017
+                </td>
+                <td>Royal Canin</td>
+                <td>Comida para perros <br />"Royal Canin" <br />Digestion Maxima
+                  <br />6KL</td>
+                <td>Entregado</td>
+                <td> 
+                  <button class="btn btn-outline-link" id="btnEliminar">
+                    <img
+                    src="img/iconos/Button-ban.png"
+                    class="icon-btn"
+                    alt="ban"/>
+                  </button>
+                </td>
+              </tr>
+            </tr>
+            <tr style="vertical-align: middle">
+              <tr style="vertical-align: middle">
+                <td>1001</td>
+                <td>
+                    0018
+                </td>
+                <td>Royal Canin</td>
+                <td>Comida para perros <br />"Royal Canin" <br />Digestion Maxima
+                  <br />6KL</td>
+                <td>Entregado</td>
+                <td> 
+                  <button class="btn btn-outline-link" id="btnEliminar">
+                    <img
+                    src="img/iconos/Button-ban.png"
+                    class="icon-btn"
+                    alt="ban"/>
+                  </button>
+                </td>
+              </tr>
+            </tr>
+            <tr style="vertical-align: middle">
+              <tr style="vertical-align: middle">
+                <td>1001</td>
+                <td>
+                    0019
+                </td>
+                <td>Royal Canin</td>
+                <td>Comida para perros <br />"Royal Canin" <br />Digestion Maxima
+                  <br />6KL</td>
+                <td>Entregado</td>
+                <td> 
+                  <button class="btn btn-outline-link" id="btnEliminar">
+                    <img
+                    src="img/iconos/Button-ban.png"
+                    class="icon-btn"
+                    alt="ban"/>
+                  </button>
+                </td>
+              </tr>
+            </tr>
+            <tr style="vertical-align: middle">
+              <tr style="vertical-align: middle">
+                <td>1001</td>
+                <td>
+                    0020
+                </td>
+                <td>Royal Canin</td>
+                <td>Comida para perros <br />"Royal Canin" <br />Digestion Maxima
+                  <br />6KL</td>
+                <td>Entregado</td>
+                <td> 
+                  <button class="btn btn-outline-link" id="btnEliminar">
+                    <img
+                    src="img/iconos/Button-ban.png"
+                    class="icon-btn"
+                    alt="ban"/>
+                  </button>
+                </td>
+              </tr>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+      </div>
+    </div>
+  </div>
 
 
     <!-- JavaScript Libraries -->

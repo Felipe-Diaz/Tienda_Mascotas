@@ -277,50 +277,54 @@ $("#StockProducto").validate(
     }
 )
 
-$("contactoFormulario").validate(
-    {
-        "rules":
-        {
-            "nombreContacto":
+$("#idContact").validate(
+    { 
+        "rules": 
+            {
+                "txtNombre":
+                    {
+                        required: true
+                    },
+                "txtEmail": 
+                    {
+                        required: true,
+                        email: true
+                    },
+                "txtTema":
+                    {
+                        required: true,
+                        maxlength: 50
+                    },
+                "txtMensaje":
+                    {
+                        required: true,
+                        minlength: 30,
+                        maxlength: 350
+                    },
+            }, // --> Fin de reglas
+        messages: 
+            {
+                "txtNombre":
                 {
-                    required: true
+                    required: 'El nombre es un campo obligatorio'
                 },
-            "emailContacto": 
-                {
-                    email: true,
-                    required: true
-                },
-            "temaContacto":
-                {
-                    required: true
-                },
-            "mensajeContacto":
-                {
-                    required: true
-                }
-        },
-        messages:
-        {
-            "nombreContacto":
-                {
-                    required: 'Este dato es obligatorio'
-                },
-            "emailContacto": 
-                {
-                    email: 'Este dato debe ser un email',
-                    required: 'Este dato es obligatorio'
-                },
-            "temaContacto":
-                {
-                    required: 'Este dato es obligatorio'
-                },
-            "mensajeContacto":
-                {
-                    required: 'Este dato es obligatorio'
-                }
-        }
+                "txtEmail": 
+                    {
+                        required: 'El email es un campo requerido',
+                        email: 'El email no cumple el formato de un correo'
+                    },
+                "txtTema":
+                    {
+                        required:'El tema es un campo obligatorio'
+                    },
+                "txtMensaje":
+                    {
+                        required: 'El mensaje es un campo obligatorio',
+                        minlength: 'El mensaje debe tener como minimo 30 caracteres'
+                    },
+            },
     }
-)
+);
 
 function validateEmail(email) {
     var re = /\S+@\S+\.\S+/;

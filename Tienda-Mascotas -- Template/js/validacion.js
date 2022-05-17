@@ -178,6 +178,73 @@ $("#idLogin").validate(
     }
 );
 
+$("#idUser").validate(
+    { 
+        "rules": 
+            {
+                "txtNombre":
+                    {
+                        required: true
+                    },
+                "txtEmail": 
+                    {
+                        required: true,
+                        email: true
+                    },
+                "txtTelefono":
+                    {
+                        required: true,
+                        minlength: 9,
+                        maxlength: 9
+                    },
+                "txtRegion":
+                    {
+                        required: true
+                    },
+                "txtRut":
+                    {
+                        required: true,
+                        maxlength: 10
+                    },
+                "txtDireccion":
+                    {
+                        required: true
+                    }
+            }, // --> Fin de reglas
+        messages: 
+            {
+                "txtNombre":
+                {
+                    required: 'El nombre es un campo obligatorio'
+                },
+                "txtEmail": 
+                    {
+                        required: 'El email es un campo requerido',
+                        email: 'El email no cumple el formato de un correo'
+                    },
+                "txtTelefono":
+                    {
+                        required: 'El telefono es un campo obligatorio',
+                        minlength: 'Debe ingresar su telefono móvil más el 9',
+                        maxlength: 'Debe ser un número de telefono, no más de 9 valores'
+                    },
+                "txtRegion":
+                    {
+                        required:'La region es un campo obligatorio'
+                    },
+                "txtRut":
+                    {
+                        required: 'El RUT es un campo obligatorio',
+                        maxlength: 'El rut debe tener como máximo 10 caracteres (SIN puntos y CON guion)'
+                    },
+                "txtDireccion":
+                    {
+                        required: 'Debe ingresar su dirección'
+                    }
+            },
+    }
+);
+
 $("#StockProducto").validate(
     {
         "rules":

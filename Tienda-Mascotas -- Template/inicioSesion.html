@@ -111,18 +111,18 @@
         <div class="col-lg-5">
           <div class="bg-light mb-5 p-5">
             <div class="d-flex align-items-center mb-2">
-              <form>
+              <form id="idRegistro" name="idRegistro" action="index2.html" method="POST">
                 <div class="row g-4">
                   <div class="col-12">
-                    <input type="email" class="form-control bg-light border-2" placeholder="Email"
+                    <input id="txtEmail" name="txtEmail" type="email" class="form-control bg-light border-2" placeholder="Email"
                       style="height: 55px;">
                   </div>
                   <div class="col-12">
-                    <input type="text" class="form-control bg-light border-2" placeholder="Contraseña"
+                    <input id="txtContrasena" name="txtContrasena" type="text" class="form-control bg-light border-2" placeholder="Contraseña"
                       style="height: 55px;">
                   </div>
                   <div class="col-12" style="text-align: center;">
-                    <a href="index2.html" class="btn btn-primary text-uppercase py-2 px-4 my-3"> Inicia Sesion</a>
+                    <button type="submit" class="btn btn-primary text-uppercase py-2 px-4 my-3"> Inicia Sesion</button>
                   </div>
                   <div class="col-12" style="text-align: center;">
                     <!-- <a href="Register.html" class="">Registrate</a> -->
@@ -249,6 +249,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/validacion.js"></script> 
 </body>
 
 </html>

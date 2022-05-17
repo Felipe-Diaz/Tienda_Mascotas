@@ -145,6 +145,37 @@ $("#idRegistro").validate(
     }
 );
 
+$("#idLogin").validate(
+    { 
+        "rules": 
+            {
+                "txtEmail": 
+                    {
+                        required: true,
+                        email: true
+                    },
+                "txtContrasena":
+                    {
+                        required: true,
+                        minlength: 8
+                    }
+            }, // --> Fin de reglas
+        messages: 
+            {
+                "txtEmail": 
+                    {
+                        required: 'El email es un campo requerido',
+                        email: 'El email no cumple el formato de un correo'
+                    },
+                "txtContrasena":
+                    {
+                        required: 'Debe ingresar su contraseña',
+                        minlength: 'Debe tener como mínimo 8 caracteres'
+                    }
+            },
+    }
+);
+
 $("#StockProducto").validate(
     {
         "rules":

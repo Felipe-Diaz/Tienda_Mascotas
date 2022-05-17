@@ -1,627 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>PetParadise - Admin - Administracion de usuario</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
 
-    <!-- Favicon -->
-    <link rel="icon" href="img/iconos/favicon.ico" />
+<head>
+  <meta charset="utf-8" />
+  <title>PetParadise - Admin - Administracion de usuario</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Favicon -->
+  <link rel="icon" href="img/iconos/favicon.ico" />
 
-    <!-- Icon Font Stylesheet -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap" rel="stylesheet" />
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Libraries Stylesheet -->
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-  <body>
-    <!-- Topbar delete -->
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
 
-    <!-- Navbar Start -->
-    <nav
-      class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-3"
-    >
-      <a href="index.html" class="navbar-brand ms-lg-4">
-        <h1 class="m-0 text-uppercase text-dark">
-          <i class="text-primary"></i>Administrador
-        </h1>
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto py-0">
+<body>
+  <!-- Topbar delete -->
+
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-3">
+  <a href="index.html" class="navbar-brand ms-lg-4">
+      <h1 class="m-0 text-uppercase text-dark"><i class="text-primary"></i>Administrador</h1>
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+      <div class="navbar-nav ms-auto py-0">
           <a href="developer.html" class="nav-item nav-link">Administrador</a>
           <a href="user.html" class="nav-item nav-link active">Usuarios</a>
-          <a href="productstockAdmin.html" class="nav-item nav-link"
-            >Productos</a
-          >
+          <a href="productstockAdmin.html" class="nav-item nav-link">Productos</a>
           <a href="saleshistory.html" class="nav-item nav-link">Historial</a>
-          <a href="index.html" class="nav-item nav-link">Inicio</a>
-        </div>
+          <a href="storage.html" class="nav-item nav-link">Bodega</a>
+          <a href="index.html" class="nav-item nav-link">Salir</a>
       </div>
-    </nav>
-    <!-- Navbar End -->
+  </div>
+</nav>
+<!-- Navbar End -->
 
-    <!-- User Table Start -->
-    <br />
-    <div class="container-xl">
-      <div class="table">
-        <div class="table-wrapper">
-          <div class="table-title">
-            <div class="row">
-              <div class="col-sm-6">
-                <h2>Administracion de usuario</h2>
-              </div>
+  <!-- User Table Start -->
+  <br />
+  <div class="container-xl">
+    <div class="table">
+      <div class="table-wrapper">
+        <div class="table-title">
+          <div class="row">
+            <div class="col-sm-6">
+              <h2>Administracion de usuario</h2>
             </div>
           </div>
-          <table class="table table-hover" id="tbUsuarioAdmin">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Nombre</th>
-                <th>Fecha de creación</th>
-                <th>Rol</th>
-                <th>Estado</th>
-                <th>Suscripción</th>
-                <th>Acción</th>
-              </tr>
-            </thead>
-            <!--  -->
-            <tbody>
-              <tr style="vertical-align: middle">
-                <td>1</td>
-                <td>
-                  <a href="#"
-                    ><img
-                      src="img/iconos/user1.png"
-                      class="avatar"
-                      alt="Avatar"
-                    />
-                    Michael Holz</a
-                  >
-                </td>
-                <td>04/10/2013</td>
-                <td>Administrador</td>
-                <td><span class="status text-success">&bull;</span> Active</td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr style="vertical-align: middle">
-                <td>2</td>
-                <td>
-                  <a href="#"
-                    ><img
-                      src="img/iconos/user2.png"
-                      class="avatar"
-                      alt="Avatar"
-                    />
-                    Paula Wilson</a
-                  >
-                </td>
-                <td>05/08/2014</td>
-                <td>usuario</td>
-                <td><span class="status text-success">&bull;</span> Active</td>
-                <td>Suscrito</td>
-                <td>
-                  <a href="a-profile.html"
-                    ><img
-                      src="img/iconos/Button-sett.png"
-                      class="icon-btn"
-                      alt="sett"
-                  /></a>
-                  <a href="#"
-                    ><img
-                      src="img/iconos/Button-ban.png"
-                      class="icon-btn"
-                      alt="ban"
-                  /></a>
-                </td>
-              </tr>
-              <tr style="vertical-align: middle">
-                <td>3</td>
-                <td>
-                  <a href="#"
-                    ><img
-                      src="img/iconos/user3.png"
-                      class="avatar"
-                      alt="Avatar"
-                    />
-                    Antonio Moreno</a
-                  >
-                </td>
-                <td>11/05/2015</td>
-                <td>Usuario</td>
-                <td>
-                  <span class="status text-danger">&bull;</span> Suspended
-                </td>
-                <td>No Suscrito</td>
-                <td>
-                  <a href="a-profile.html"
-                    ><img
-                      src="img/iconos/Button-sett.png"
-                      class="icon-btn"
-                      alt="sett"
-                  /></a>
-                  <a href="#"
-                    ><img
-                      src="img/iconos/Button-ban.png"
-                      class="icon-btn"
-                      alt="ban"
-                  /></a>
-                </td>
-              </tr>
-              <tr style="vertical-align: middle">
-                <td>4</td>
-                <td>
-                  <a href="#"
-                    ><img
-                      src="img/iconos/user4.png"
-                      class="avatar"
-                      alt="Avatar"
-                    />
-                    Mary Saveley</a
-                  >
-                </td>
-                <td>06/09/2016</td>
-                <td>Usuario</td>
-                <td><span class="status text-success">&bull;</span> Active</td>
-                <td>Suscrito</td>
-                <td>
-                  <a href="a-profile.html"
-                    ><img
-                      src="img/iconos/Button-sett.png"
-                      class="icon-btn"
-                      alt="sett"
-                  /></a>
-                  <a href="#"
-                    ><img
-                      src="img/iconos/Button-ban.png"
-                      class="icon-btn"
-                      alt="ban"
-                  /></a>
-                </td>
-              </tr>
-              <tr style="vertical-align: middle">
-                <td>5</td>
-                <td>
-                  <a href="#"
-                    ><img
-                      src="img/iconos/user1.png"
-                      class="avatar"
-                      alt="Avatar"
-                    />
-                    Martin Sommer</a
-                  >
-                </td>
-                <td>12/08/2017</td>
-                <td>Usuario</td>
-                <td>
-                  <span class="status text-warning">&bull;</span> Inactive
-                </td>
-                <td>Suscrito</td>
-                <td>
-                  <a href="a-profile.html"
-                    ><img
-                      src="img/iconos/Button-sett.png"
-                      class="icon-btn"
-                      alt="sett"
-                  /></a>
-                  <a href="#"
-                    ><img
-                      src="img/iconos/Button-ban.png"
-                      class="icon-btn"
-                      alt="ban"
-                  /></a>
-                </td>
-              </tr>
-              <tr style="vertical-align: middle">
-                <td>6</td>
-                <td>
-                  <a href="#"
-                    ><img
-                      src="img/iconos/user2.png"
-                      class="avatar"
-                      alt="Avatar"
-                    />
-                    Martin Sommer</a
-                  >
-                </td>
-                <td>12/08/2017</td>
-                <td>Usuario</td>
-                <td>
-                  <span class="status text-warning">&bull;</span> Inactive
-                </td>
-                <td>No Suscrito</td>
-                <td>
-                  <a href="a-profile.html"
-                    ><img
-                      src="img/iconos/Button-sett.png"
-                      class="icon-btn"
-                      alt="sett"
-                  /></a>
-                  <a href="#"
-                    ><img
-                      src="img/iconos/Button-ban.png"
-                      class="icon-btn"
-                      alt="ban"
-                  /></a>
-                </td>
-              </tr>
-              <tr style="vertical-align: middle">
-                <td>7</td>
-                <td>
-                  <a href="#"
-                    ><img
-                      src="img/iconos/user3.png"
-                      class="avatar"
-                      alt="Avatar"
-                    />
-                    Martin Sommer</a
-                  >
-                </td>
-                <td>12/08/2017</td>
-                <td>Usuario</td>
-                <td>
-                  <span class="status text-warning">&bull;</span> Inactive
-                </td>
-                <td>No Suscrito</td>
-                <td>
-                  <a href="a-profile.html"
-                    ><img
-                      src="img/iconos/Button-sett.png"
-                      class="icon-btn"
-                      alt="sett"
-                  /></a>
-                  <a href="#"
-                    ><img
-                      src="img/iconos/Button-ban.png"
-                      class="icon-btn"
-                      alt="ban"
-                  /></a>
-                </td>
-              </tr>
-              <tr style="vertical-align: middle">
-                <td>8</td>
-                <td>
-                  <a href="#"
-                    ><img
-                      src="img/iconos/user4.png"
-                      class="avatar"
-                      alt="Avatar"
-                    />
-                    Martin Sommer</a
-                  >
-                </td>
-                <td>12/08/2017</td>
-                <td>Usuario</td>
-                <td>
-                  <span class="status text-warning">&bull;</span> Inactive
-                </td>
-                <td>Suscrito</td>
-                <td>
-                  <a href="a-profile.html"
-                    ><img
-                      src="img/iconos/Button-sett.png"
-                      class="icon-btn"
-                      alt="sett"
-                  /></a>
-                  <a href="#"
-                    ><img
-                      src="img/iconos/Button-ban.png"
-                      class="icon-btn"
-                      alt="ban"
-                  /></a>
-                </td>
-              </tr>
-              <tr style="vertical-align: middle">
-                <td>9</td>
-                <td>
-                  <a href="#"
-                    ><img
-                      src="img/iconos/user1.png"
-                      class="avatar"
-                      alt="Avatar"
-                    />
-                    Martin Sommer</a
-                  >
-                </td>
-                <td>12/08/2017</td>
-                <td>Usuario</td>
-                <td>
-                  <span class="status text-warning">&bull;</span> Inactive
-                </td>
-                <td>Suscrito</td>
-                <td>
-                  <a href="a-profile.html"
-                    ><img
-                      src="img/iconos/Button-sett.png"
-                      class="icon-btn"
-                      alt="sett"
-                  /></a>
-                  <a href="#"
-                    ><img
-                      src="img/iconos/Button-ban.png"
-                      class="icon-btn"
-                      alt="ban"
-                  /></a>
-                </td>
-              </tr>
-              <tr style="vertical-align: middle">
-                <td>10</td>
-                <td>
-                  <a href="#"
-                    ><img
-                      src="img/iconos/user2.png"
-                      class="avatar"
-                      alt="Avatar"
-                    />
-                    Martin Sommer</a
-                  >
-                </td>
-                <td>12/08/2017</td>
-                <td>Usuario</td>
-                <td>
-                  <span class="status text-warning">&bull;</span> Inactive
-                </td>
-                <td>Suscrito</td>
-                <td>
-                  <a href="a-profile.html"
-                    ><img
-                      src="img/iconos/Button-sett.png"
-                      class="icon-btn"
-                      alt="sett"
-                  /></a>
-                  <a href="#"
-                    ><img
-                      src="img/iconos/Button-ban.png"
-                      class="icon-btn"
-                      alt="ban"
-                  /></a>
-                </td>
-              </tr>
-              <tr style="vertical-align: middle">
-                <td>11</td>
-                <td>
-                  <a href="#"
-                    ><img
-                      src="img/iconos/user3.png"
-                      class="avatar"
-                      alt="Avatar"
-                    />
-                    Martin Sommer</a
-                  >
-                </td>
-                <td>12/08/2017</td>
-                <td>Usuario</td>
-                <td>
-                  <span class="status text-warning">&bull;</span> Inactive
-                </td>
-                <td>Suscrito</td>
-                <td>
-                  <a href="a-profile.html"
-                    ><img
-                      src="img/iconos/Button-sett.png"
-                      class="icon-btn"
-                      alt="sett"
-                  /></a>
-                  <a href="#"
-                    ><img
-                      src="img/iconos/Button-ban.png"
-                      class="icon-btn"
-                      alt="ban"
-                  /></a>
-                </td>
-              </tr>
-              <tr style="vertical-align: middle">
-                <td>12</td>
-                <td>
-                  <a href="#"
-                    ><img
-                      src="img/iconos/user4.png"
-                      class="avatar"
-                      alt="Avatar"
-                    />
-                    Martin Sommer</a
-                  >
-                </td>
-                <td>12/08/2017</td>
-                <td>Usuario</td>
-                <td>
-                  <span class="status text-warning">&bull;</span> Inactive
-                </td>
-                <td>Suscrito</td>
-                <td>
-                  <a href="a-profile.html"
-                    ><img
-                      src="img/iconos/Button-sett.png"
-                      class="icon-btn"
-                      alt="sett"
-                  /></a>
-                  <a href="#"
-                    ><img
-                      src="img/iconos/Button-ban.png"
-                      class="icon-btn"
-                      alt="ban"
-                  /></a>
-                </td>
-              </tr>
-              <tr style="vertical-align: middle">
-                <td>13</td>
-                <td>
-                  <a href="#"
-                    ><img
-                      src="img/iconos/user1.png"
-                      class="avatar"
-                      alt="Avatar"
-                    />
-                    Martin Sommer</a
-                  >
-                </td>
-                <td>12/08/2017</td>
-                <td>Usuario</td>
-                <td>
-                  <span class="status text-warning">&bull;</span> Inactive
-                </td>
-                <td>Suscrito</td>
-                <td>
-                  <a href="a-profile.html"
-                    ><img
-                      src="img/iconos/Button-sett.png"
-                      class="icon-btn"
-                      alt="sett"
-                  /></a>
-                  <a href="#"
-                    ><img
-                      src="img/iconos/Button-ban.png"
-                      class="icon-btn"
-                      alt="ban"
-                  /></a>
-                </td>
-              </tr>
-              <tr style="vertical-align: middle">
-                <td>14</td>
-                <td>
-                  <a href="#"
-                    ><img
-                      src="img/iconos/user2.png"
-                      class="avatar"
-                      alt="Avatar"
-                    />
-                    Martin Sommer</a
-                  >
-                </td>
-                <td>12/08/2017</td>
-                <td>Usuario</td>
-                <td>
-                  <span class="status text-warning">&bull;</span> Inactive
-                </td>
-                <td>Suscrito</td>
-                <td>
-                  <a href="a-profile.html"
-                    ><img
-                      src="img/iconos/Button-sett.png"
-                      class="icon-btn"
-                      alt="sett"
-                  /></a>
-                  <a href="#"
-                    ><img
-                      src="img/iconos/Button-ban.png"
-                      class="icon-btn"
-                      alt="ban"
-                  /></a>
-                </td>
-              </tr>
-              <tr style="vertical-align: middle">
-                <td>15</td>
-                <td>
-                  <a href="#"
-                    ><img
-                      src="img/iconos/user3.png"
-                      class="avatar"
-                      alt="Avatar"
-                    />
-                    Martin Sommer</a
-                  >
-                </td>
-                <td>12/08/2017</td>
-                <td>Usuario</td>
-                <td>
-                  <span class="status text-warning">&bull;</span> Inactive
-                </td>
-                <td>No Suscrito</td>
-                <td>
-                  <a href="a-profile.html"
-                    ><img
-                      src="img/iconos/Button-sett.png"
-                      class="icon-btn"
-                      alt="sett"
-                  /></a>
-                  <a href="#"
-                    ><img
-                      src="img/iconos/Button-ban.png"
-                      class="icon-btn"
-                      alt="ban"
-                  /></a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="clearfix">
-            <div class="hint-text">
-              Showing <b>15</b> out of <b>50</b> entries
-            </div>
-            <br />
-            <ul class="pagination">
-              <li class="page-item disabled">
-                <a href="#" class="page-link">Previous</a>
-              </li>
-              <li class="page-item active">
-                <a href="#" class="page-link">1</a>
-              </li>
-              <li class="page-item"><a href="#" class="page-link">2</a></li>
-              <li class="page-item"><a href="#" class="page-link">3</a></li>
-              <li class="page-item"><a href="#" class="page-link">4</a></li>
-              <li class="page-item"><a href="#" class="page-link">5</a></li>
-              <li class="page-item"><a href="#" class="page-link">Next</a></li>
-            </ul>
+        </div>
+        <table class="table table-hover" id="tbUsuarioAdmin">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Nombre</th>
+              <th>Fecha de creación</th>
+              <th>Rol</th>
+              <th>Estado</th>
+              <th>Suscripción</th>
+              <th>Acción</th>
+            </tr>
+          </thead>
+          <!--  -->
+          <tbody>
+            <tr style="vertical-align: middle">
+              <td>1</td>
+              <td>
+                 <img src="img/iconos/user1.png" class="avatar" alt="Avatar" />
+                  Michael Holz</a>
+              </td>
+              <td>04/10/2013</td>
+              <td>Administrador</td>
+              <td><span class="status text-success">&bull;</span> Active</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr style="vertical-align: middle">
+              <td>2</td>
+              <td>
+                 <img src="img/iconos/user2.png" class="avatar" alt="Avatar" />
+                  Paula Wilson</a>
+              </td>
+              <td>05/08/2014</td>
+              <td>usuario</td>
+              <td><span class="status text-success">&bull;</span> Active</td>
+              <td>Suscrito</td>
+              <td>
+                <a href="a-profile.html"><img src="img/iconos/Button-sett.png" class="icon-btn" alt="sett" /></a>
+                 <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
+              </td>
+            </tr>
+            <tr style="vertical-align: middle">
+              <td>3</td>
+              <td>
+                 <img src="img/iconos/user3.png" class="avatar" alt="Avatar" />
+                  Antonio Moreno</a>
+              </td>
+              <td>11/05/2015</td>
+              <td>Usuario</td>
+              <td>
+                <span class="status text-danger">&bull;</span> Suspended
+              </td>
+              <td>No Suscrito</td>
+              <td>
+                <a href="a-profile.html"><img src="img/iconos/Button-sett.png" class="icon-btn" alt="sett" /></a>
+                 <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
+              </td>
+            </tr>
+            <tr style="vertical-align: middle">
+              <td>4</td>
+              <td>
+                 <img src="img/iconos/user4.png" class="avatar" alt="Avatar" />
+                  Mary Saveley</a>
+              </td>
+              <td>06/09/2016</td>
+              <td>Usuario</td>
+              <td><span class="status text-success">&bull;</span> Active</td>
+              <td>Suscrito</td>
+              <td>
+                <a href="a-profile.html"><img src="img/iconos/Button-sett.png" class="icon-btn" alt="sett" /></a>
+                 <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
+              </td>
+            </tr>
+            <tr style="vertical-align: middle">
+              <td>5</td>
+              <td>
+                 <img src="img/iconos/user1.png" class="avatar" alt="Avatar" />
+                  Martin Sommer</a>
+              </td>
+              <td>12/08/2017</td>
+              <td>Usuario</td>
+              <td>
+                <span class="status text-warning">&bull;</span> Inactive
+              </td>
+              <td>Suscrito</td>
+              <td>
+                <a href="a-profile.html"><img src="img/iconos/Button-sett.png" class="icon-btn" alt="sett" /></a>
+                 <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
+              </td>
+            </tr>
+            <tr style="vertical-align: middle">
+              <td>6</td>
+              <td>
+                 <img src="img/iconos/user2.png" class="avatar" alt="Avatar" />
+                  Martin Sommer</a>
+              </td>
+              <td>12/08/2017</td>
+              <td>Usuario</td>
+              <td>
+                <span class="status text-warning">&bull;</span> Inactive
+              </td>
+              <td>No Suscrito</td>
+              <td>
+                <a href="a-profile.html"><img src="img/iconos/Button-sett.png" class="icon-btn" alt="sett" /></a>
+                 <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
+              </td>
+            </tr>
+            <tr style="vertical-align: middle">
+              <td>7</td>
+              <td>
+                 <img src="img/iconos/user3.png" class="avatar" alt="Avatar" />
+                  Martin Sommer</a>
+              </td>
+              <td>12/08/2017</td>
+              <td>Usuario</td>
+              <td>
+                <span class="status text-warning">&bull;</span> Inactive
+              </td>
+              <td>No Suscrito</td>
+              <td>
+                <a href="a-profile.html"><img src="img/iconos/Button-sett.png" class="icon-btn" alt="sett" /></a>
+                 <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
+              </td>
+            </tr>
+            <tr style="vertical-align: middle">
+              <td>8</td>
+              <td>
+                 <img src="img/iconos/user4.png" class="avatar" alt="Avatar" />
+                  Martin Sommer</a>
+              </td>
+              <td>12/08/2017</td>
+              <td>Usuario</td>
+              <td>
+                <span class="status text-warning">&bull;</span> Inactive
+              </td>
+              <td>Suscrito</td>
+              <td>
+                <a href="a-profile.html"><img src="img/iconos/Button-sett.png" class="icon-btn" alt="sett" /></a>
+                 <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
+              </td>
+            </tr>
+            <tr style="vertical-align: middle">
+              <td>9</td>
+              <td>
+                 <img src="img/iconos/user1.png" class="avatar" alt="Avatar" />
+                  Martin Sommer</a>
+              </td>
+              <td>12/08/2017</td>
+              <td>Usuario</td>
+              <td>
+                <span class="status text-warning">&bull;</span> Inactive
+              </td>
+              <td>Suscrito</td>
+              <td>
+                <a href="a-profile.html"><img src="img/iconos/Button-sett.png" class="icon-btn" alt="sett" /></a>
+                 <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
+              </td>
+            </tr>
+            <tr style="vertical-align: middle">
+              <td>10</td>
+              <td>
+                 <img src="img/iconos/user2.png" class="avatar" alt="Avatar" />
+                  Martin Sommer</a>
+              </td>
+              <td>12/08/2017</td>
+              <td>Usuario</td>
+              <td>
+                <span class="status text-warning">&bull;</span> Inactive
+              </td>
+              <td>Suscrito</td>
+              <td>
+                <a href="a-profile.html"><img src="img/iconos/Button-sett.png" class="icon-btn" alt="sett" /></a>
+                 <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
+              </td>
+            </tr>
+            <tr style="vertical-align: middle">
+              <td>11</td>
+              <td>
+                 <img src="img/iconos/user3.png" class="avatar" alt="Avatar" />
+                  Martin Sommer</a>
+              </td>
+              <td>12/08/2017</td>
+              <td>Usuario</td>
+              <td>
+                <span class="status text-warning">&bull;</span> Inactive
+              </td>
+              <td>Suscrito</td>
+              <td>
+                <a href="a-profile.html"><img src="img/iconos/Button-sett.png" class="icon-btn" alt="sett" /></a>
+                 <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
+              </td>
+            </tr>
+            <tr style="vertical-align: middle">
+              <td>12</td>
+              <td>
+                 <img src="img/iconos/user4.png" class="avatar" alt="Avatar" />
+                  Martin Sommer</a>
+              </td>
+              <td>12/08/2017</td>
+              <td>Usuario</td>
+              <td>
+                <span class="status text-warning">&bull;</span> Inactive
+              </td>
+              <td>Suscrito</td>
+              <td>
+                <a href="a-profile.html"><img src="img/iconos/Button-sett.png" class="icon-btn" alt="sett" /></a>
+                 <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
+              </td>
+            </tr>
+            <tr style="vertical-align: middle">
+              <td>13</td>
+              <td>
+                 <img src="img/iconos/user1.png" class="avatar" alt="Avatar" />
+                  Martin Sommer</a>
+              </td>
+              <td>12/08/2017</td>
+              <td>Usuario</td>
+              <td>
+                <span class="status text-warning">&bull;</span> Inactive
+              </td>
+              <td>Suscrito</td>
+              <td>
+                <a href="a-profile.html"><img src="img/iconos/Button-sett.png" class="icon-btn" alt="sett" /></a>
+                 <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
+              </td>
+            </tr>
+            <tr style="vertical-align: middle">
+              <td>14</td>
+              <td>
+                 <img src="img/iconos/user2.png" class="avatar" alt="Avatar" />
+                  Martin Sommer</a>
+              </td>
+              <td>12/08/2017</td>
+              <td>Usuario</td>
+              <td>
+                <span class="status text-warning">&bull;</span> Inactive
+              </td>
+              <td>Suscrito</td>
+              <td>
+                <a href="a-profile.html"><img src="img/iconos/Button-sett.png" class="icon-btn" alt="sett" /></a>
+                 <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
+              </td>
+            </tr>
+            <tr style="vertical-align: middle">
+              <td>15</td>
+              <td>
+                 <img src="img/iconos/user3.png" class="avatar" alt="Avatar" />
+                  Martin Sommer</a>
+              </td>
+              <td>12/08/2017</td>
+              <td>Usuario</td>
+              <td>
+                <span class="status text-warning">&bull;</span> Inactive
+              </td>
+              <td>No Suscrito</td>
+              <td>
+                <a href="a-profile.html"><img src="img/iconos/Button-sett.png" class="icon-btn" alt="sett" /></a>
+                 <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="clearfix">
+          <div class="hint-text">
+            Showing <b>15</b> out of <b>50</b> entries
           </div>
           <br />
+          <ul class="pagination">
+            <li class="page-item disabled">
+              <a href="#" class="page-link">Previous</a>
+            </li>
+            <li class="page-item active">
+              <a href="#" class="page-link">1</a>
+            </li>
+            <li class="page-item"><a href="#" class="page-link">2</a></li>
+            <li class="page-item"><a href="#" class="page-link">3</a></li>
+            <li class="page-item"><a href="#" class="page-link">4</a></li>
+            <li class="page-item"><a href="#" class="page-link">5</a></li>
+            <li class="page-item"><a href="#" class="page-link">Next</a></li>
+          </ul>
         </div>
+        <br />
       </div>
     </div>
-    <!-- User Table End -->
+  </div>
+  <!-- User Table End -->
 
-    <!-- Hero delete -->
+  <!-- Hero delete -->
 
-    <!-- Video Modal delete -->
+  <!-- Video Modal delete -->
 
-    <!-- About delete -->
+  <!-- About delete -->
 
-    <!-- Services delete -->
+  <!-- Services delete -->
 
-    <!-- Products delete -->
+  <!-- Products delete -->
 
-    <!-- Offer delete -->
+  <!-- Offer delete -->
 
-    <!-- Footer Start -->
+  <!-- Footer Start -->
 
-    <!-- Back to Top -->
-    <!-- <a href="#" class="btn btn-primary py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a> -->
+  <!-- Back to Top -->
+  <!-- <a href="#" class="btn btn-primary py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a> -->
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-  </body>
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+</body>
+
 </html>

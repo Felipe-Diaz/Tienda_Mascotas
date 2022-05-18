@@ -120,11 +120,38 @@
                   <div class="container-xl">
                     <div class="row">
                       <form  id="editProducto" name="editProducto" method="post" action="productstockAdmin.html"> 
+
                         <div class="col-lg-12">
                             <div class="card mb-5">
                                 <div class="card-body">
                                 <div class="row">
                                 <div class="col-sm-4">
+                          </div>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <label for="txtID">ID producto</label>
+                          </div>
+                          <div class="col-sm-8">
+                            <input type="text" name="txtIDProducto" id="txtIDProducto" placeholder="ID producto " class="stock_ammount">
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <label for="idCategoriaProd">Categoría</label>
+                          </div>
+                          <div class="col-sm-8">
+                            <select name="idCategoriaProd" id="idCategoriaProd" class="stock_ammount">
+                              <option value="1">Gato</option>
+                              <option value="2">Perro</option>
+                              <option value="3">Conejo</option>
+                              <option value="4">Ave</option>
+                            </select>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-sm-4">
                             <label for="txtNombreProducto">Nombre producto</label>
                           </div>
                           <div class="col-sm-8">
@@ -134,7 +161,7 @@
                         <hr>
                         <div class="row">
                           <div class="col-sm-4">
-                            <label for="txtDescripcionProducto"> Descripción</label>
+                            <label for="txtDescripcionProducto">Descripción</label>
                           </div>
                           <div class="col-sm-8">
                             <input type="text" name="txtDescripcionProducto" id="txtDescripcionProducto" placeholder="Descripción del producto" class="stock_ammount">
@@ -143,33 +170,33 @@
                         <hr>
                         <div class="row">
                           <div class="col-sm-4">
-                            <label for="txtPrecioProducto">Precio</label>
+                            <label for="txtPrecioProducto">Precio $</label>
                           </div>
                           <div class="col-sm-8">
-                            $<input type="number" name="txtPrecioProducto" id="txtPrecioProducto" placeholder="Precio Producto" class="stock_ammount">
+                            <input type="number" name="txtPrecioProducto" id="txtPrecioProducto" placeholder="Precio Producto" class="stock_ammount">
                           </div>
                         </div>
                         <hr>
                         <div class="row">
                             <div class="col-sm-4">
-                              <label for="descuentoProductoSus">Descuento</label>
+                              <label for="descuentoProductoSus">Descuento %</label>
                             </div>
                             <div class="col-sm-8">
-                              %<input type="number" name="descuentoProductoSus" id="descuentoProductoSus" placeholder="Descuento suscriptor" class="stock_ammount">
+                              <input type="number" name="descuentoProductoSus" id="descuentoProductoSus" placeholder="Descuento suscriptor" class="stock_ammount">
                             </div>
                         </div>
                         <hr>
                         <div class="row">
                           <div class="col-sm-4">
-                            <label for="ofertaProducto">Oferta</label>
+                            <label for="ofertaProducto">Oferta %</label>
                           </div>
                           <div class="col-sm-8">
-                            %<input type="number" name="ofertaProducto" id="ofertaProducto" placeholder="Oferta para todos" class="stock_ammount">
+                            <input type="number" name="ofertaProducto" id="ofertaProducto" placeholder="Oferta para todos" class="stock_ammount">
                           </div>
-                          <div>
-                          <center>
-                            <button class="btn btn-primary text-uppercase py-2 px-4 my-3" type="submit">Guardar</button>
-                          </center>
+                          <div style="align-items: center;">
+                            <button class="btn btn-primary text-uppercase py-2 px-4 my-3" type="submit" id="btnNuevo">Nuevo</button>
+                            <button class="btn btn-primary text-uppercase py-2 px-4 my-3" type="submit" id="btnGuardar">Guardar</button>
+                            <button class="btn btn-primary text-uppercase py-2 px-4 my-3" type="submit" id="btnEliminar">Eliminar</button>
                           </div>
                         </div>
                       </form>

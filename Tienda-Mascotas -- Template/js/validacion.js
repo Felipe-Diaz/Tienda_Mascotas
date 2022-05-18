@@ -2,6 +2,10 @@ $("#editProducto").validate(
     {
         "rules":
         {
+            "txtIDProducto":
+            {
+                required: true
+            },
             "txtNombreProducto":
             {
                 required: true,
@@ -28,6 +32,10 @@ $("#editProducto").validate(
         },
         messages:
         {
+            "txtIDProducto":
+            {
+                required: 'Este campo es obligatorio'
+            },
             "txtNombreProducto":
             {
                 required: 'Este campo es obligatorio',
@@ -64,20 +72,14 @@ $("#idRegistro").validate(
                     {
                         required: true
                     },
+                "txtApellido":
+                    {
+                        required: true
+                    },
                 "txtEmail": 
                     {
                         required: true,
                         email: true
-                    },
-                "txtTelefono":
-                    {
-                        required: true,
-                        minlength: 9,
-                        maxlength: 9
-                    },
-                "txtRegion":
-                    {
-                        required: true
                     },
                 "txtRut":
                     {
@@ -106,6 +108,10 @@ $("#idRegistro").validate(
                 {
                     required: 'El nombre es un campo obligatorio'
                 },
+                "txtApellido":
+                    {
+                        required: 'Este es un campo obligatorio'
+                    },
                 "txtEmail": 
                     {
                         required: 'El email es un campo requerido',

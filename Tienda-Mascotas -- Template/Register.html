@@ -108,27 +108,36 @@
                 <h1 class="display-5 text-uppercase mb-0">Registrate para comprar</h1>
             </div>
             <div class="row g-5">
-                <div class="col-lg-7">
+                <div class="col-lg-6">
                     <form id="idRegistro" name="idRegistro" action="already-register.html" method="POST">
                         <div class="row g-3">
                             <div class="col-12">
-                                <input type="text" class="form-control bg-light border-0 px-4" placeholder="Nombre" style="height: 55px;" id="txtNombre" name="txtNombre">
+                              <input class="form-control bg-light border-0 px-4 py-3"  placeholder="RUT" id="txtRut" name="txtRut">
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control bg-light border-0 px-4" placeholder="Nombres" style="height: 55px;" id="txtNombre" name="txtNombre">
+                            </div>
+                            <div class="col-12">
+                              <input type="text" class="form-control bg-light border-0 px-4" placeholder="Apellidos" style="height: 55px;" id="txtApellido" name="txtApellido">
                             </div>
                             <div class="col-12" >
                                 <input type="email" class="form-control bg-light border-0 px-4" placeholder="Email" style="height: 55px;" id="txtEmail" name="txtEmail">
                             </div>
                             <div class="col-12">
-                                <input class="form-control bg-light border-0 px-4 py-3"  placeholder="Telefono de contacto" id="txtTelefono" name="txtTelefono">
-                            </div>
-                            <div class="col-12">
-                                <input type="text" class="form-control bg-light border-0 px-4" placeholder="Region" style="height: 55px; " id="txtRegion" name="txtRegion">
-                            </div>
-                            <div class="col-12">
-                                <input class="form-control bg-light border-0 px-4 py-3"  placeholder="RUT" id="txtRut" name="txtRut">
-                            </div>
-                            <div class="col-12">
                                 <input type="text" class="form-control bg-light border-0 px-4" placeholder="Dirección" style="height: 55px;" id="txtDireccion" name="txtDireccion">
                             </div>
+                            <hr>
+                            <div class="col-12 row">
+                              <div class="col-6">
+                                <label>Con suscripción</label> 
+                              </div>
+                              <div class="col-6">
+                                <input type="checkbox" id="clienteSuscrito" value="Suscrito"> 
+                                Deseo suscribirme con un aporte de $3000 
+                                mensuales y obtener un 5% de descuento en mis compras
+                              </div>
+                            </div>
+                            <hr>
                             <div class="col-12">
                                 <input type="password" class="form-control bg-light border-0 px-4 py-3"  placeholder="Contraseña" id="txtContrasena" name="txtContrasena">
                             </div>
@@ -138,10 +147,24 @@
                             <div class="col-12">
                                 <center>
                                     <button class="btn btn-primary text-uppercase py-2 px-4 my-3" type="submit"> Registrarse</button>
+                                    <button type="reset" class="btn btn-primary text-uppercase py-2 px-4 my-3">Limpiar</button>
                                 </center>
                             </div>
                         </div>
                     </form>
+                </div>
+                <div class="col-lg-6">
+                  <div class="col-sm">
+                    <div class="card">
+                      <div style="text-align: center;">
+                        <img src="img/user.jpg" alt="" name="fotoperfil" id="fotoperfil" width="200px">
+                    </div>
+                    <br>
+                    <div style="text-align: center;">
+                        <input class="form-control-file" type="file" name="buscarfoto" id="buscarfoto">
+                    </div>
+                    </div>
+                  </div>
                 </div>
             </div>
         </div>

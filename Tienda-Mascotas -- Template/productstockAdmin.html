@@ -51,8 +51,124 @@
   </nav>
   <!-- Navbar End -->
 
+<!-- Inicio Producto Admin -->
+  <br>
+  <div class="container-xl">
+      <div class="container">
+          <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 600px;">
+              <h1 class="display-5 text-uppercase mb-0">DATOS DEL PRODUCTO: </h1>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="card">
+                <div style="text-align: center;">
+                  <img src="img/product-1.png" alt="" name="fotoperfil" id="fotoperfil" width="200px">
+                </div>
+              <br>
+                <div style="text-align: center;">
+                    <input class="form-control-file" type="file" name="buscarfoto" id="buscarfoto">
+                </div>
+            </div>
+          </div>
+            <div class="col-sm">
+              <section style="background-color: #fff;">
+                <br>
+                <div class="container-xl">
+                  <div class="row">
+                    <form  id="editProducto" name="editProducto" method="post" action="productstockAdmin.html"> 
+
+                      <div class="col-lg-12">
+                          <div class="card mb-5">
+                              <div class="card-body">
+                              <div class="row">
+                              <div class="col-sm-4">
+                        </div>
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="txtID">ID producto</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <input type="text" name="txtIDProducto" id="txtIDProducto" placeholder="ID producto " class="stock_ammount">
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="idCategoriaProd">Categoría</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <select name="idCategoriaProd" id="idCategoriaProd" class="stock_ammount">
+                            <option value="1">Gato</option>
+                            <option value="2">Perro</option>
+                            <option value="3">Conejo</option>
+                            <option value="4">Ave</option>
+                          </select>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="txtNombreProducto">Nombre producto</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <input type="text" name="txtNombreProducto" id="txtNombreProducto" placeholder="Nombre producto " class="stock_ammount">
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="txtDescripcionProducto">Descripción</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <input type="text" name="txtDescripcionProducto" id="txtDescripcionProducto" placeholder="Descripción del producto" class="stock_ammount">
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="txtPrecioProducto">Precio $</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <input type="number" name="txtPrecioProducto" id="txtPrecioProducto" placeholder="Precio Producto" class="stock_ammount">
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="row">
+                          <div class="col-sm-4">
+                            <label for="descuentoProductoSus">Descuento %</label>
+                          </div>
+                          <div class="col-sm-8">
+                            <input type="number" name="descuentoProductoSus" id="descuentoProductoSus" placeholder="Descuento suscriptor" class="stock_ammount">
+                          </div>
+                      </div>
+                      <hr>
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="ofertaProducto">Oferta %</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <input type="number" name="ofertaProducto" id="ofertaProducto" placeholder="Oferta para todos" class="stock_ammount">
+                        </div>
+                        <div style="align-items: center;">
+                          <button class="btn btn-primary text-uppercase py-2 px-4 my-3" type="submit" id="btnNuevo">Nuevo</button>
+                          <button class="btn btn-primary text-uppercase py-2 px-4 my-3" type="submit" id="btnGuardar">Guardar</button>
+                          <button class="btn btn-primary text-uppercase py-2 px-4 my-3" type="submit" id="btnEliminar">Eliminar</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </section>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Fin producto Admin -->
+
   <!-- Inicio Stock Admin -->
-  <br />
+  <br>
   <div class="container-xl">
     <div class="table">
       <div class="table-wrapper">
@@ -67,6 +183,7 @@
           <thead>
             <tr>
               <th>ID producto</th>
+              <th>Categoria</th>
               <th>Nombre</th>
               <th>Descripción</th>
               <th>Precio</th>
@@ -74,13 +191,14 @@
                 <center>Descuento suscriptor</center>
               </th>
               <th>Oferta</th>
-              <th>Stock</th>
+
             </tr>
           </thead>
           <tbody>
             <tr style="vertical-align: middle">
-              <td><a href="productstockAdminEdit.html">#1001</a></td>
+              <td>#1001</td>
               <td>Comida Perro</td>
+              <td>Royal Canin</td>
               <td>
                 Comida para perros <br />"Royal Canin" <br />Digestion Maxima
                 <br />6KL
@@ -90,11 +208,11 @@
                 <center>5%</center>
               </td>
               <td>20%</td>
-              <td><a href="productstockAdminStock.html">1 Unidades</a></td>
             </tr>
             <tr style="vertical-align: middle">
-              <td><a href="productstockAdminEdit.html">#1002</a></td>
+              <td>#1002</td>
               <td>Comida Perro</td>
+              <td>Royal Canin</td>
               <td>
                 Comida para perros <br />"Royal Canin" <br />Digestion Maxima
                 <br />6KL
@@ -104,11 +222,11 @@
                 <center>5%</center>
               </td>
               <td>20%</td>
-              <td><a href="productstockAdminStock.html">5 Unidades</a></td>
             </tr>
             <tr style="vertical-align: middle">
-              <td><a href="productstockAdminEdit.html">#1003</a></td>
+              <td>#1003</td>
               <td>Comida Perro</td>
+              <td>Royal Canin</td>
               <td>
                 Comida para perros <br />"N&D" <br />Para perro pequeños<br />Sabor
                 calabaza<br />4KL
@@ -118,11 +236,11 @@
                 <center>5%</center>
               </td>
               <td>20%</td>
-              <td><a href="productstockAdminStock.html">8 Unidades</a></td>
             </tr>
             <tr style="vertical-align: middle">
-              <td><a href="productstockAdminEdit.html">#1004</a></td>
+              <td>#1004</td>
               <td>Comida Perro</td>
+              <td>Royal Canin</td>
               <td>
                 Comida para perros "N&D"<br />Para perros pequeños<br />sabor
                 granada<br />4KL
@@ -132,11 +250,11 @@
                 <center>5%</center>
               </td>
               <td>20%</td>
-              <td><a href="productstockAdminStock.html">2 Unidades</a></td>
             </tr>
             <tr style="vertical-align: middle">
-              <td><a href="productstockAdminEdit.html">#1005</a></td>
+              <td>#1005</td>
               <td>Comida Perro</td>
+              <td>Royal Canin</td>
               <td>
                 Comida para perros <br />"Royal Canin" <br />Digestion Maxima
                 <br />6KL
@@ -146,11 +264,11 @@
                 <center>5%</center>
               </td>
               <td>20%</td>
-              <td><a href="productstockAdminStock.html">1 Unidades</a></td>
             </tr>
             <tr style="vertical-align: middle">
-              <td><a href="productstockAdminEdit.html">#1006</a></td>
+              <td>#1006</td>
               <td>Comida Perro</td>
+              <td>Royal Canin</td>
               <td>
                 Comida para perros <br />"Royal Canin" <br />Digestion Maxima
                 <br />6KL
@@ -160,11 +278,11 @@
                 <center>5%</center>
               </td>
               <td>20%</td>
-              <td><a href="productstockAdminStock.html">1 Unidades</a></td>
             </tr>
             <tr style="vertical-align: middle">
-              <td><a href="productstockAdminEdit.html">#1007</a></td>
+              <td>#1007</td>
               <td>Comida Perro</td>
+              <td>Royal Canin</td>
               <td>
                 Comida para perros <br />"Royal Canin" <br />Digestion Maxima
                 <br />6KL
@@ -174,11 +292,11 @@
                 <center>5%</center>
               </td>
               <td>20%</td>
-              <td><a href="productstockAdminStock.html">8 Unidades</a></td>
             </tr>
             <tr style="vertical-align: middle">
-              <td><a href="productstockAdminEdit.html">#1008</a></td>
+              <td>#1008</td>
               <td>Comida Perro</td>
+              <td>Royal Canin</td>
               <td>
                 Comida para perros <br />"Royal Canin" <br />Digestion Maxima
                 <br />6KL
@@ -188,11 +306,11 @@
                 <center>5%</center>
               </td>
               <td>20%</td>
-              <td><a href="productstockAdminStock.html">1 Unidades</a></td>
             </tr>
             <tr style="vertical-align: middle">
-              <td><a href="productstockAdminEdit.html">#1009</a></td>
+              <td>#1009</td>
               <td>Comida Perro</td>
+              <td>Royal Canin</td>
               <td>
                 Comida para perros <br />"Royal Canin" <br />Digestion Maxima
                 <br />6KL
@@ -202,11 +320,11 @@
                 <center>5%</center>
               </td>
               <td>20%</td>
-              <td><a href="productstockAdminStock.html">2 Unidades</a></td>
             </tr>
             <tr style="vertical-align: middle">
-              <td><a href="productstockAdminEdit.html">#1010</a></td>
+              <td>#1010</td>
               <td>Comida Perro</td>
+              <td>Royal Canin</td>
               <td>
                 Comida para perros <br />"Royal Canin" <br />Digestion Maxima
                 <br />6KL
@@ -216,11 +334,11 @@
                 <center>5%</center>
               </td>
               <td>20%</td>
-              <td><a href="productstockAdminStock.html">2 Unidades</a></td>
             </tr>
             <tr style="vertical-align: middle">
-              <td><a href="productstockAdminEdit.html">#1011</a></td>
+              <td>#1011</td>
               <td>Comida Perro</td>
+              <td>Royal Canin</td>
               <td>
                 Comida para perros <br />"Royal Canin" <br />Digestion Maxima
                 <br />6KL
@@ -230,11 +348,11 @@
                 <center>5%</center>
               </td>
               <td>20%</td>
-              <td><a href="productstockAdminStock.html">2 Unidades</a></td>
             </tr>
             <tr style="vertical-align: middle">
-              <td><a href="productstockAdminEdit.html">#1012</a></td>
+              <td>#1012</td>
               <td>Comida Perro</td>
+              <td>Royal Canin</td>
               <td>
                 Comida para perros <br />"Royal Canin" <br />Digestion Maxima
                 <br />6KL
@@ -244,11 +362,11 @@
                 <center>5%</center>
               </td>
               <td>20%</td>
-              <td><a href="productstockAdminStock.html">3 Unidades</a></td>
             </tr>
             <tr style="vertical-align: middle">
-              <td><a href="productstockAdminEdit.html">#1013</a></td>
+              <td>#1013</td>
               <td>Comida Perro</td>
+              <td>Royal Canin</td>
               <td>
                 Comida para perros <br />"Royal Canin" <br />Digestion Maxima
                 <br />6KL
@@ -258,11 +376,11 @@
                 <center>5%</center>
               </td>
               <td>20%</td>
-              <td><a href="productstockAdminStock.html">4 Unidades</a></td>
             </tr>
             <tr style="vertical-align: middle">
-              <td><a href="productstockAdminEdit.html">#1014</a></td>
+              <td>#1014</td>
               <td>Comida Perro</td>
+              <td>Royal Canin</td>
               <td>
                 Comida para perros <br />"Royal Canin" <br />Digestion Maxima
                 <br />6KL
@@ -272,11 +390,11 @@
                 <center>5%</center>
               </td>
               <td>20%</td>
-              <td><a href="productstockAdminStock.html">2 Unidades</a></td>
             </tr>
             <tr style="vertical-align: middle">
-              <td><a href="productstockAdminEdit.html">#1015</a></td>
+              <td>#1015</td>
               <td>Comida Perro</td>
+              <td>Royal Canin</td>
               <td>
                 Comida para perros <br />"Royal Canin" <br />Digestion Maxima
                 <br />6KL
@@ -286,7 +404,6 @@
                 <center>5%</center>
               </td>
               <td>20%</td>
-              <td><a href="productstockAdminStock.html">3 Unidades</a></td>
             </tr>
           </tbody>
         </table>
@@ -313,7 +430,7 @@
       </div>
     </div>
   </div>
-  <!-- Fin producto Admin -->
+  <!-- Fin Stock Admin -->
 
   <!-- JavaScript Libraries -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -322,8 +439,17 @@
   <script src="lib/waypoints/waypoints.min.js"></script>
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-  <!-- Template Javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
+  <script language="javascript" type="text/javascript"
+    src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/validacion.js"></script>
 </body>
 
 </html>

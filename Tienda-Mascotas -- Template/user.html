@@ -30,28 +30,140 @@
 </head>
 
 <body>
-  <!-- Topbar delete -->
 
-<!-- Navbar Start -->
-<nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-3">
-  <a href="index.html" class="navbar-brand ms-lg-4">
-      <h1 class="m-0 text-uppercase text-dark"><i class="text-primary"></i>Administrador</h1>
-  </a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-      <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-      <div class="navbar-nav ms-auto py-0">
-          <a href="developer.html" class="nav-item nav-link">Administrador</a>
-          <a href="user.html" class="nav-item nav-link active">Usuarios</a>
-          <a href="productstockAdmin.html" class="nav-item nav-link">Productos</a>
-          <a href="saleshistory.html" class="nav-item nav-link">Historial</a>
-          <a href="storage.html" class="nav-item nav-link">Bodega</a>
-          <a href="index.html" class="nav-item nav-link">Salir</a>
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-3">
+    <a href="index.html" class="navbar-brand ms-lg-4">
+        <h1 class="m-0 text-uppercase text-dark"><i class="text-primary"></i>Administrador</h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+        <div class="navbar-nav ms-auto py-0">
+            <a href="developer.html" class="nav-item nav-link">Administrador</a>
+            <a href="user.html" class="nav-item nav-link active">Usuarios</a>
+            <a href="productstockAdmin.html" class="nav-item nav-link">Productos</a>
+            <a href="saleshistory.html" class="nav-item nav-link">Historial</a>
+            <a href="storage.html" class="nav-item nav-link">Bodega</a>
+            <a href="index.html" class="nav-item nav-link">Salir</a>
+        </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+  <br>
+  <!-- Perfil de usuario -->
+  <div class="container-xl">
+    <div class="container-fluid">
+      <h1>Configuraci&oacuten de usuario</h1>
+      <br>
+    </div>
+    <div class="card">
+      <div class="row">
+        <div class="card-body">
+          <div class="col-sm">
+            <form id="idUser" method="post" action="user.html">
+              <div class="form-group">
+                <div class="col-sm" style="padding: 20px;">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <p class="mb-0">Nombre</p>
+                    </div>
+                    <div class="col-sm-8">
+                      <input type="text" class="stock_ammount" name="txtNombre" id="txtNombre"
+                        placeholder="John" />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <p class="mb-0">Apellido</p>
+                    </div>
+                    <div class="col-sm-8">
+                      <input type="text" class="stock_ammount" name="txtApellido" id="txtApellido"
+                        placeholder="Smith" />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <p class="mb-0">Email</p>
+                    </div>
+                    <div class="col-sm-8">
+                      <input type="email" class="stock_ammount" name="txtEmail" id="idEmail"
+                        placeholder="example@example.com" />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <p class="mb-0">Telefono</p>
+                    </div>
+                    <div class="col-sm-8">
+                      <input type="text" class="stock_ammount" name="txtTelefono"
+                        id="idTelefono" placeholder="(+56) 987654321" />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <p class="mb-0">Rut</p>
+                    </div>
+                    <div class="col-sm-8">
+                      <input type="text" class="stock_ammount" name="txtRut" id="idRut"
+                        placeholder="12.345.678-9" />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <p class="mb-0">Direcci&oacuten</p>
+                    </div>
+                    <div class="col-sm-8">
+                      <input type="text" class="stock_ammount" name="txtDireccion"
+                        id="idDireccion" placeholder="Papitas #1234, Santiago, Chile" />
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <p class="mb-0">Tipo Usuario</p>
+                      </div>
+                      <div class="col-sm-8">
+                        <!-- <form action=""> -->
+                        <select name="cbTipoUser" id="cbTipoUser">
+                          <option value="1">Usuario</option>
+                          <option value="2">Administrador</option>
+                        </select>
+                        <!-- </form> -->
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <p class="mb-0">Suscripción</p>
+                      </div>
+                      <div class="col-sm-8">
+                        <p>Suscrito</p>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 text-align-center">
+                      <button type="submit" class="btn btn-outline-primary">
+                        Guardar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-sm">
+            <div>
+              <div style="text-align: center;">
+                <img src="img/user.jpg" alt="" name="fotoperfil" id="fotoperfil" width="200px">
+              </div>
+              <div style="text-align: center;">
+                <input class="form-control-file" type="file" name="buscarfoto" id="buscarfoto">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
   </div>
-</nav>
-<!-- Navbar End -->
+  <!-- Perfil End -->
 
   <!-- User Table Start -->
   <br />
@@ -82,7 +194,7 @@
             <tr style="vertical-align: middle">
               <td>1</td>
               <td>
-                 <img src="img/iconos/user1.png" class="avatar" alt="Avatar" />
+                  <img src="img/iconos/user1.png" class="avatar" alt="Avatar" />
                   Michael Holz</a>
               </td>
               <td>04/10/2013</td>
@@ -94,7 +206,7 @@
             <tr style="vertical-align: middle">
               <td>2</td>
               <td>
-                 <img src="img/iconos/user2.png" class="avatar" alt="Avatar" />
+                  <img src="img/iconos/user2.png" class="avatar" alt="Avatar" />
                   Paula Wilson</a>
               </td>
               <td>05/08/2014</td>
@@ -103,13 +215,13 @@
               <td>Suscrito</td>
               <td>
                 <a href="a-profile.html"><img src="img/iconos/Button-sett.png" class="icon-btn" alt="sett" /></a>
-                 <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
+                  <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
               </td>
             </tr>
             <tr style="vertical-align: middle">
               <td>3</td>
               <td>
-                 <img src="img/iconos/user3.png" class="avatar" alt="Avatar" />
+                  <img src="img/iconos/user3.png" class="avatar" alt="Avatar" />
                   Antonio Moreno</a>
               </td>
               <td>11/05/2015</td>
@@ -120,13 +232,13 @@
               <td>No Suscrito</td>
               <td>
                 <a href="a-profile.html"><img src="img/iconos/Button-sett.png" class="icon-btn" alt="sett" /></a>
-                 <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
+                  <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
               </td>
             </tr>
             <tr style="vertical-align: middle">
               <td>4</td>
               <td>
-                 <img src="img/iconos/user4.png" class="avatar" alt="Avatar" />
+                  <img src="img/iconos/user4.png" class="avatar" alt="Avatar" />
                   Mary Saveley</a>
               </td>
               <td>06/09/2016</td>
@@ -135,13 +247,13 @@
               <td>Suscrito</td>
               <td>
                 <a href="a-profile.html"><img src="img/iconos/Button-sett.png" class="icon-btn" alt="sett" /></a>
-                 <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
+                  <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
               </td>
             </tr>
             <tr style="vertical-align: middle">
               <td>5</td>
               <td>
-                 <img src="img/iconos/user1.png" class="avatar" alt="Avatar" />
+                  <img src="img/iconos/user1.png" class="avatar" alt="Avatar" />
                   Martin Sommer</a>
               </td>
               <td>12/08/2017</td>
@@ -152,13 +264,13 @@
               <td>Suscrito</td>
               <td>
                 <a href="a-profile.html"><img src="img/iconos/Button-sett.png" class="icon-btn" alt="sett" /></a>
-                 <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
+                  <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
               </td>
             </tr>
             <tr style="vertical-align: middle">
               <td>6</td>
               <td>
-                 <img src="img/iconos/user2.png" class="avatar" alt="Avatar" />
+                  <img src="img/iconos/user2.png" class="avatar" alt="Avatar" />
                   Martin Sommer</a>
               </td>
               <td>12/08/2017</td>
@@ -169,13 +281,13 @@
               <td>No Suscrito</td>
               <td>
                 <a href="a-profile.html"><img src="img/iconos/Button-sett.png" class="icon-btn" alt="sett" /></a>
-                 <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
+                  <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
               </td>
             </tr>
             <tr style="vertical-align: middle">
               <td>7</td>
               <td>
-                 <img src="img/iconos/user3.png" class="avatar" alt="Avatar" />
+                  <img src="img/iconos/user3.png" class="avatar" alt="Avatar" />
                   Martin Sommer</a>
               </td>
               <td>12/08/2017</td>
@@ -186,13 +298,13 @@
               <td>No Suscrito</td>
               <td>
                 <a href="a-profile.html"><img src="img/iconos/Button-sett.png" class="icon-btn" alt="sett" /></a>
-                 <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
+                  <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
               </td>
             </tr>
             <tr style="vertical-align: middle">
               <td>8</td>
               <td>
-                 <img src="img/iconos/user4.png" class="avatar" alt="Avatar" />
+                  <img src="img/iconos/user4.png" class="avatar" alt="Avatar" />
                   Martin Sommer</a>
               </td>
               <td>12/08/2017</td>
@@ -203,13 +315,13 @@
               <td>Suscrito</td>
               <td>
                 <a href="a-profile.html"><img src="img/iconos/Button-sett.png" class="icon-btn" alt="sett" /></a>
-                 <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
+                  <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
               </td>
             </tr>
             <tr style="vertical-align: middle">
               <td>9</td>
               <td>
-                 <img src="img/iconos/user1.png" class="avatar" alt="Avatar" />
+                  <img src="img/iconos/user1.png" class="avatar" alt="Avatar" />
                   Martin Sommer</a>
               </td>
               <td>12/08/2017</td>
@@ -220,13 +332,13 @@
               <td>Suscrito</td>
               <td>
                 <a href="a-profile.html"><img src="img/iconos/Button-sett.png" class="icon-btn" alt="sett" /></a>
-                 <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
+                  <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
               </td>
             </tr>
             <tr style="vertical-align: middle">
               <td>10</td>
               <td>
-                 <img src="img/iconos/user2.png" class="avatar" alt="Avatar" />
+                  <img src="img/iconos/user2.png" class="avatar" alt="Avatar" />
                   Martin Sommer</a>
               </td>
               <td>12/08/2017</td>
@@ -237,13 +349,13 @@
               <td>Suscrito</td>
               <td>
                 <a href="a-profile.html"><img src="img/iconos/Button-sett.png" class="icon-btn" alt="sett" /></a>
-                 <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
+                  <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
               </td>
             </tr>
             <tr style="vertical-align: middle">
               <td>11</td>
               <td>
-                 <img src="img/iconos/user3.png" class="avatar" alt="Avatar" />
+                  <img src="img/iconos/user3.png" class="avatar" alt="Avatar" />
                   Martin Sommer</a>
               </td>
               <td>12/08/2017</td>
@@ -254,13 +366,13 @@
               <td>Suscrito</td>
               <td>
                 <a href="a-profile.html"><img src="img/iconos/Button-sett.png" class="icon-btn" alt="sett" /></a>
-                 <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
+                  <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
               </td>
             </tr>
             <tr style="vertical-align: middle">
               <td>12</td>
               <td>
-                 <img src="img/iconos/user4.png" class="avatar" alt="Avatar" />
+                  <img src="img/iconos/user4.png" class="avatar" alt="Avatar" />
                   Martin Sommer</a>
               </td>
               <td>12/08/2017</td>
@@ -271,13 +383,13 @@
               <td>Suscrito</td>
               <td>
                 <a href="a-profile.html"><img src="img/iconos/Button-sett.png" class="icon-btn" alt="sett" /></a>
-                 <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
+                  <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
               </td>
             </tr>
             <tr style="vertical-align: middle">
               <td>13</td>
               <td>
-                 <img src="img/iconos/user1.png" class="avatar" alt="Avatar" />
+                  <img src="img/iconos/user1.png" class="avatar" alt="Avatar" />
                   Martin Sommer</a>
               </td>
               <td>12/08/2017</td>
@@ -288,13 +400,13 @@
               <td>Suscrito</td>
               <td>
                 <a href="a-profile.html"><img src="img/iconos/Button-sett.png" class="icon-btn" alt="sett" /></a>
-                 <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
+                  <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
               </td>
             </tr>
             <tr style="vertical-align: middle">
               <td>14</td>
               <td>
-                 <img src="img/iconos/user2.png" class="avatar" alt="Avatar" />
+                  <img src="img/iconos/user2.png" class="avatar" alt="Avatar" />
                   Martin Sommer</a>
               </td>
               <td>12/08/2017</td>
@@ -305,13 +417,13 @@
               <td>Suscrito</td>
               <td>
                 <a href="a-profile.html"><img src="img/iconos/Button-sett.png" class="icon-btn" alt="sett" /></a>
-                 <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
+                  <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
               </td>
             </tr>
             <tr style="vertical-align: middle">
               <td>15</td>
               <td>
-                 <img src="img/iconos/user3.png" class="avatar" alt="Avatar" />
+                  <img src="img/iconos/user3.png" class="avatar" alt="Avatar" />
                   Martin Sommer</a>
               </td>
               <td>12/08/2017</td>
@@ -322,7 +434,7 @@
               <td>No Suscrito</td>
               <td>
                 <a href="a-profile.html"><img src="img/iconos/Button-sett.png" class="icon-btn" alt="sett" /></a>
-                 <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
+                  <img src="img/iconos/Button-ban.png" class="icon-btn" alt="ban" /></a>
               </td>
             </tr>
           </tbody>
@@ -352,20 +464,6 @@
   </div>
   <!-- User Table End -->
 
-  <!-- Hero delete -->
-
-  <!-- Video Modal delete -->
-
-  <!-- About delete -->
-
-  <!-- Services delete -->
-
-  <!-- Products delete -->
-
-  <!-- Offer delete -->
-
-  <!-- Footer Start -->
-
   <!-- Back to Top -->
   <!-- <a href="#" class="btn btn-primary py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a> -->
 
@@ -379,5 +477,4 @@
   <!-- Template Javascript -->
   <script src="js/main.js"></script>
 </body>
-
 </html>

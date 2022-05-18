@@ -192,6 +192,10 @@ $("#idUser").validate(
                     {
                         required: true
                     },
+                "txtApellido":
+                    {
+                        required: true
+                    },
                 "txtEmail": 
                     {
                         required: true,
@@ -202,10 +206,6 @@ $("#idUser").validate(
                         required: true,
                         minlength: 9,
                         maxlength: 9
-                    },
-                "txtRegion":
-                    {
-                        required: true
                     },
                 "txtRut":
                     {
@@ -220,9 +220,13 @@ $("#idUser").validate(
         messages: 
             {
                 "txtNombre":
-                {
-                    required: 'El nombre es un campo obligatorio'
-                },
+                    {
+                        required: 'El nombre es un campo obligatorio'
+                    },
+                "txtApellido":
+                    {
+                        required:'El apellido es un campo obligatorio'
+                    },
                 "txtEmail": 
                     {
                         required: 'El email es un campo requerido',
@@ -233,10 +237,6 @@ $("#idUser").validate(
                         required: 'El telefono es un campo obligatorio',
                         minlength: 'Debe ingresar su telefono móvil más el 9',
                         maxlength: 'Debe ser un número de telefono, no más de 9 valores'
-                    },
-                "txtRegion":
-                    {
-                        required:'La region es un campo obligatorio'
                     },
                 "txtRut":
                     {

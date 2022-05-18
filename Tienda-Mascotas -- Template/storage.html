@@ -53,119 +53,110 @@
 <!-- Navbar End -->
 
   <!-- Inicio Stock Admin -->
-  <center>
-    <br>
-    <div class="container-fluid pt-5">
-      <div class="container">
-        <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 600px;">
-          <h1 class="display-5 text-uppercase mb-0">STOCK DEL PRODUCTO: [NOMBRE PRODUCTO]</h1>
-        </div>
-        <div class="row">
-          <div class="col-sm">
-            <section style="background-color: #fff;">
-              <br>
-              <div class="container-xl">
-                <div class="row">
-                  
-                  <form id="StockProducto" name="StockProducto" method="post" action="productstockAdmin.html">
-                    <div class="col">
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="row">
-                            <div class="col-sm-4">
-                              <label for="txtIDStock">ID Stock</label>
-                            </div>
-                            <div class="col-sm-8">
-                              <input type="number" name="txtIDStock" id="txtIDStock" placeholder="Id Stock "
-                                class="stock_ammount">
-                            </div>
+
+  <br>
+  <div class="container-fluid pt-5">
+    <div class="container">
+      <div class="col-sm">
+        <h2>Administracion de bodega</h2>
+        <br>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <section style="background-color: #fff;">
+            <div class="container-xl">
+              <div class="row">
+                <form id="StockProducto" name="StockProducto" method="post" action="productstockAdmin.html">
+                  <div class="col">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <label for="txtIDStock">ID Stock</label>
                           </div>
-                          <hr>
-                          <div class="row">
-                            <div class="col-sm-4">
-                              <label for="estadoEntregaProd">Categoría</label>
-                            </div>
-                            <div class="col-sm-8">
-                              <select name="estadoEntregaProd" id="estadoEntregaProd" class="stock_ammount">
-                                <option value="1">Gato</option>
-                                <option value="2">Perro</option>
-                                <option value="3">Conejo</option>
-                                <option value="4">Ave</option>
-                              </select>
-                            </div>
+                          <div class="col-sm-8">
+                            <input type="number" name="txtIDStock" id="txtIDStock" placeholder="Id Stock "
+                              class="stock_ammount">
                           </div>
-                          <hr>
-                          <div class="row">
-                            <div class="col-sm-4">
-                              <label for="estadoEntregaProd">Nombre</label>
-                            </div>
-                            <div class="col-sm-8">
-                              <select name="estadoEntregaProd" id="estadoEntregaProd" class="stock_ammount">
-                                <option value="1">Comida 1 Gato</option>
-                                <option value="2">Comida 2 Gato</option>
-                                <option value="3">Comida 3 Gato</option>
-                                <option value="4">Comida 4 Gato</option>
-                              </select>
-                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <label for="estadoEntregaProd">Categoría</label>
                           </div>
-                          <hr>
-                          <div class="row">
-                            <div class="col-sm-4">
-                              <label for="txtStockProdEspecifico">Cantidad</label>
-                            </div>
-                            <div class="col-sm-8">
-                              <input type="number" name="txtStockProdEspecifico" id="txtStockProdEspecifico"
-                                placeholder="Stock Producto" class="stock_ammount">
-                            </div>
+                          <div class="col-sm-8">
+                            <select name="estadoEntregaProd" id="estadoEntregaProd" class="stock_ammount">
+                              <option value="1">Gato</option>
+                              <option value="2">Perro</option>
+                              <option value="3">Conejo</option>
+                              <option value="4">Ave</option>
+                            </select>
                           </div>
-                          <br>
-                          <hr>
-                          <div>
-                            <center>
-                              <button class="btn btn-primary text-uppercase py-2 px-4 my-3" type="submit"
-                                id="btnNuevo">Nuevo</button>
-                              &nbsp;
-                              <button class="btn btn-primary text-uppercase py-2 px-4 my-3" type="submit"
-                                id="btnEditar">Guardar</button>
-                            </center>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <label for="estadoEntregaProd">Nombre</label>
                           </div>
-                  </form>
-                </div>
-              </div>
-            </section>
-          </div>
-          <div class="col-sm">
-            <div class="col">
-              <div class="card">
-                <div class="card-body text-center">
-                  <img src="img/product-1.png" alt="avatar" class="img-fluid" style="width: 150px;">
-                  <h5 class="my-3">#1001</h5>
-                  <p class="text-muted mb-1">Royal Canin <br> Comida para perros <br />"Royal Canin" <br />Digestion
-                    Maxima
-                    <br />6KL
-                  </p>
-                  <p class="text-muted mb-4">$20000</p>
-                </div>
+                          <div class="col-sm-8">
+                            <select name="estadoEntregaProd" id="estadoEntregaProd" class="stock_ammount">
+                              <option value="1">Comida 1 Gato</option>
+                              <option value="2">Comida 2 Gato</option>
+                              <option value="3">Comida 3 Gato</option>
+                              <option value="4">Comida 4 Gato</option>
+                            </select>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <label for="txtStockProdEspecifico">Cantidad</label>
+                          </div>
+                          <div class="col-sm-8">
+                            <input type="number" name="txtStockProdEspecifico" id="txtStockProdEspecifico"
+                              placeholder="Stock Producto" class="stock_ammount">
+                          </div>
+                        </div>
+                        <br>
+                        <hr>
+                        <div>
+                          <center>
+                            <button class="btn btn-primary text-uppercase py-2 px-4 my-3" type="submit"
+                              id="btnAgregar">Agregar</button>
+                            &nbsp;
+                            <button class="btn btn-primary text-uppercase py-2 px-4 my-3" type="submit"
+                              id="btnNuevo">Nuevo</button>
+                            &nbsp;
+                            <button class="btn btn-primary text-uppercase py-2 px-4 my-3" type="submit"
+                              id="btnEditar">Guardar</button>
+                          </center>
+                        </div>
+                </form>
               </div>
             </div>
+          </section>
+        </div>
+        <div class="col-sm">
+          <div class="col">
+            <div class="card">
+              <div style="text-align: center;">
+                <img src="img/product-1.png" alt="" name="fotoperfil" id="fotoperfil" width="200px">
+              </div>
+            <br>
+              <div style="text-align: center;">
+                  <input class="form-control-file" type="file" name="buscarfoto" id="buscarfoto">
+              </div>
           </div>
-
-        
+          </div>
         </div>
       </div>
     </div>
-  </center>
+  </div>
+  <br><br>
   <!-- Fin producto Admin -->
   <div class="container-xl">
     <div class="table">
       <div class="table-wrapper">
-        <div class="table-title">
-          <div class="row">
-            <div class="col-sm-6">
-              <h2>Administracion de Stock</h2>
-            </div>
-          </div>
-        </div>
         <table class="table table-hover" id="tbUsuarioAdmin">
           <thead>
             <tr>

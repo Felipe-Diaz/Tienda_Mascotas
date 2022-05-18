@@ -105,101 +105,80 @@
       <br />
       <br />
       <div class="container">
-        <div
-          class="border-start border-5 border-primary ps-5 mb-5"
-          style="max-width: 600px"
-        >
-          <h6 class="text-primary text-uppercase">Historial de compras</h6>
-          <h1 class="display-5 text-uppercase mb-0">Compras del: [Fecha]</h1>
+        <div class="border-start border-5 border-primary ps-5 mb-5 col-lg-8" style="max-width: 600px;">
+          <h6 class="text-primary text-uppercase">Carrito de compra</h6>
+          <h1 class="display-5 text-uppercase mb-0">Mi Carrito</h1>
         </div>
-        <center>
-          <table>
+        <div class="col-lg-6 offset-3">
+          <div class="container">
+            <h3 style="text-align: center;" >Estado de la compra</h3>
+            <label for="bodega" >En Bodega</label>
+            <input type="radio" name="estado" id="bodega" class="col-lg-2" checked>
+            <label for="transito">En transito</label>
+            <input type="radio" name="estado" id="transito" class="col-lg-2"> 
+            <label for="entregado">Entregado</label>
+            <input type="radio" name="estado" id="entregado" class="col-lg-2">
+          </div>
+        </div>
+        <hr>
+        <br>
+        <div class="row">
+          <table id="tbShopcart">
             <thead>
-              <tr style="border: solid black 2px">
-                <th
-                  class="col-sm-6 col-lg-4 historial_tabla"
-                  style="border: solid black 2px"
-                >
-                  Productos
-                </th>
-                <th
-                  class="col-sm-6 col-lg-4 historial_tabla"
-                  style="border: solid black 2px"
-                >
-                  Precio
-                </th>
-                <th
-                  class="col-sm-6 col-lg-4 historial_tabla"
-                  style="border: solid black 2px"
-                >
-                  Cantidad
-                </th>
+              <tr style="border: solid black 2px;">
+                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Categoría</th>
+                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Nombre</th>
+                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Precio</th>
+                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Desc. Suscriptor</th>
+                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Desc. Oferta</th>
+                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Precio Final</th>
               </tr>
-            </thead>
             <tbody>
               <tr>
-                <td
-                  class="col-sm-6 col-lg-4 historial_tabla"
-                  style="border: solid black 2px"
-                >
-                  Comida Perro
-                </td>
-                <td
-                  class="col-sm-6 col-lg-4 historial_tabla"
-                  style="border: solid black 2px"
-                >
-                  $15000
-                </td>
-                <td
-                  class="col-sm-6 col-lg-4 historial_tabla"
-                  style="border: solid black 2px"
-                >
-                  1
-                </td>
-              </tr>
-              <tr>
-                <td
-                  class="col-sm-6 col-lg-4 historial_tabla"
-                  style="border: solid black 2px"
-                >
-                  Comida Gato
-                </td>
-                <td
-                  class="col-sm-6 col-lg-4 historial_tabla"
-                  style="border: solid black 2px"
-                >
-                  $8000
-                </td>
-                <td
-                  class="col-sm-6 col-lg-4 historial_tabla"
-                  style="border: solid black 2px"
-                >
-                  98
-                </td>
-              </tr>
-              <tr>
-                <td
-                  class="col-sm-6 col-lg-4 historial_tabla"
-                  style="border: solid black 2px"
-                >
-                  Juguete mascotas
-                </td>
-                <td
-                  class="col-sm-6 col-lg-4 historial_tabla"
-                  style="border: solid black 2px"
-                >
-                  $5000
-                </td>
-                <td
-                  class="col-sm-6 col-lg-4 historial_tabla"
-                  style="border: solid black 2px"
-                >
-                  3
-                </td>
+                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Perros</th>
+                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">"Royal
+                  Canin" <br>Digestion Maxima <br>6KL</th>
+                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">$18.990</th>
+                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">0%</th>
+                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">0%</th>
+                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">$18.990</th>
               </tr>
             </tbody>
+            <tbody>
+              <tr>
+                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Perros</th>
+                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">"Pedigree"
+                  equilibrado <br>6KL</th>
+                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">$19.990</th>
+                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">5%</th>
+                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">45%</th>
+                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">$9.990</th>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Gatos</th>
+                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">"Michi
+                  Deluxe" <br>sabor atun con pollo <br>15 Kilos</th>
+                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">$29.990</th>
+                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">5%</th>
+                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">25%</th>
+                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">$19.990</th>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <th class="col-sm-3 col-lg-2 historial_tabla"></th>
+                <th class="col-sm-3 col-lg-2 historial_tabla"></th>
+                <th class="col-sm-3 col-lg-2 historial_tabla"></th>
+                <th class="col-sm-3 col-lg-2 historial_tabla"></th>
+                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Total</th>
+                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">$94.930</th>
+              </tr>
+            </tbody>
+            </thead>
           </table>
-        </center>
+        </div>
       </div>
 
     <!-- Footer Start -->

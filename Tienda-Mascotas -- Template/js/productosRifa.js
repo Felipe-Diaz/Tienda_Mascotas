@@ -40,3 +40,23 @@ $(document).ready(function(){
         flag=!flag;
     });
 });
+
+
+function makeid() {
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  
+    for (var i = 0; i < 5; i++)
+      text += possible.charAt(Math.floor(Math.random() * possible.length));
+  
+    return text;
+}
+
+
+$(document).ready(function(){
+    $("#btnRdmadmin").click(function(){
+        var contRDM = makeid();
+        $("#txtRanContraseña").html(`${contRDM}`);
+        document.getElementsByName('txtRanContraseña')[0].placeholder = contRDM;
+    })
+})

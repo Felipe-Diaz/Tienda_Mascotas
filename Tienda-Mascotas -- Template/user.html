@@ -178,7 +178,13 @@
                       </div>
                       <div class="col-sm-8">
                         <input type="text" class="stock_ammount" name="txtRanContraseña"
-                          id="txtRanContraseña" placeholder="******" />
+                          id="txtRanContraseña" placeholder="******" readonly>
+                          <div class="col-lg-8">
+                            <br>
+                            <button type="button" class="btn btn-primary" id="btnRdmadmin" name="btnRdmadmin">
+                              Generar Contraseña
+                            </button>
+                          </div>
                       </div>
                     </div>
                     <hr>
@@ -192,9 +198,6 @@
                         </button>
                         <button type="submit" class="btn btn-primary">
                           Eliminar
-                        </button>
-                        <button type="submit" class="btn btn-primary">
-                          Generar Contraseña
                         </button>
                       </div>
                     </div>
@@ -222,6 +225,10 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <div id="random">
+
   </div>
   <!-- Perfil End -->
 
@@ -532,5 +539,6 @@
   <script language="javascript" type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/validacion.js"></script> 
+  <script src="js/productosRifa.js"></script>
 </body>
 </html>

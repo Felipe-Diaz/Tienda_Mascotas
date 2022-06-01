@@ -208,11 +208,22 @@ $("#idUser").validate(
                 "txtRut":
                     {
                         required: true,
-                        maxlength: 10
+                        maxlength: 15
                     },
                 "txtDireccion":
                     {
                         required: true
+                    },
+                "txtContrasena":
+                    {
+                        required: true,
+                        minlength: 8
+                    },
+                "txtRContrasena":
+                    {
+                        required: true,
+                        minlength: 8,
+                        equalTo:"#txtContrasena"
                     }
             }, // --> Fin de reglas
         messages: 
@@ -242,6 +253,17 @@ $("#idUser").validate(
                 "txtDireccion":
                     {
                         required: 'Debe ingresar su dirección'
+                    },
+                "txtContrasena":
+                    {
+                        required: 'Debe ingresar su contraseña',
+                        minlength: 'Debe tener como mínimo 8 caracteres'
+                    },
+                "txtRContrasena":
+                    {
+                        required: 'Debe repetir su contraseña',
+                        minlength: 'Debe tener como mínimo 8 caracteres',
+                        equalTo: 'Debe ser la misma contraseña ingresada anteriormente'
                     }
             },
     }

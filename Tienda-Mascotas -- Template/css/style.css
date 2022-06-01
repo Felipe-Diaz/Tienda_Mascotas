@@ -538,3 +538,7 @@
     padding: 1px;
     display: inline-block;
 }
+
+.error{
+    color: red;
+}

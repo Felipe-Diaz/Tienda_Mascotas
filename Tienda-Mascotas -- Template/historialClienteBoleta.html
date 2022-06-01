@@ -36,40 +36,47 @@
 
   <body>
     <!-- Topbar Start -->
-    <div class="container-fluid border-bottom d-none d-lg-block">
-      <div class="row gx-0">
-        <div class="col-lg-4 text-center py-2">
-          <div class="d-inline-flex align-items-center">
-            <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
-            <div class="text-start">
-              <h6 class="text-uppercase mb-1">Encuentranos en:</h6>
-              <span
-                >Av. Matta 463, Región Metropolitana de Santiago, Chile</span
-              >
-            </div>
+  <div class="container-fluid border-bottom d-none d-lg-block">
+    <div class="row gx-0">
+      <div class="col-lg-3 text-center py-2">
+        <div class="d-inline-flex align-items-center">
+          <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
+          <div class="text-start">
+            <h6 class="text-uppercase mb-1">Encuentranos en:</h6>
+            <span>Av. Matta 463, Región Metropolitana de Santiago, Chile</span>
           </div>
         </div>
-        <div class="col-lg-4 text-center border-start border-end py-2">
-          <div class="d-inline-flex align-items-center">
-            <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
-            <div class="text-start">
-              <h6 class="text-uppercase mb-1">¿Tienes dudas?</h6>
-              <span>Pet.Paradise@petparad.cl</span>
-            </div>
+      </div>
+      <div class="col-lg-3 text-center border-start border-end py-2">
+        <div class="d-inline-flex align-items-center">
+          <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
+          <div class="text-start">
+            <h6 class="text-uppercase mb-1">¿Tienes dudas?</h6>
+            <span>Pet.Paradise@petparad.cl</span>
           </div>
         </div>
-        <div class="col-lg-4 text-center py-2">
-          <div class="d-inline-flex align-items-center">
-            <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
-            <div class="text-start">
-              <h6 class="text-uppercase mb-1">Contáctanos</h6>
-              <span>+569 4588 2159</span>
-            </div>
+      </div>
+      <div class="col-lg-3 text-center border-end py-2">
+        <div class="d-inline-flex align-items-center">
+          <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
+          <div class="text-start">
+            <h6 class="text-uppercase mb-1">Contáctanos</h6>
+            <span>+569 4588 2159</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 text-center py-2">
+        <div class="d-inline-flex align-items-center">
+          <a href="shopcart.html"><i class="bi bi-cart fs-1 text-primary me-3"></i></a>
+          <div class="text-start">
+            <h6 class="text-uppercase mb-1">Carrito de compra</h6>
+            <span>Total de compra: 0</span>
           </div>
         </div>
       </div>
     </div>
-    <!-- Topbar End -->
+  </div>
+  <!-- Topbar End -->
 
   <!-- Navbar Start -->
   <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm mt-auto py-2 py-lg-0 px-2 px-lg-0">
@@ -102,18 +109,26 @@
       <br />
       <div class="container">
         <div class="border-start border-5 border-primary ps-5 mb-5 col-lg-8" style="max-width: 600px;">
-          <h6 class="text-primary text-uppercase">Carrito de compra</h6>
-          <h1 class="display-5 text-uppercase mb-0">Mi Carrito</h1>
+          <h6 class="text-primary text-uppercase">Factura #123</h6>
+          <h1 class="display-5 text-uppercase mb-0">Detalle Factura</h1>
         </div>
         <div class="col-lg-6 offset-3">
-          <div class="container">
+          <div class="container-fluid" style="text-align: center;">
             <h3 style="text-align: center;" >Estado de la compra</h3>
-            <label for="bodega" >En Bodega</label>
-            <input type="radio" name="estado" id="bodega" class="col-lg-2" checked>
-            <label for="transito">En transito</label>
-            <input type="radio" name="estado" id="transito" class="col-lg-2"> 
-            <label for="entregado">Entregado</label>
-            <input type="radio" name="estado" id="entregado" class="col-lg-2">
+            <div class="row">
+              <div class="col-lg-4">
+                <label for="bodega" >En Bodega</label>
+                <input type="radio" name="estado" id="bodega" class="col-lg-2" checked>
+              </div>
+              <div class="col-lg-4">
+                <label for="transito">En transito</label>
+                <input type="radio" name="estado" id="transito" class="col-lg-2"> 
+              </div>
+              <div class="col-lg-4">
+                <label for="entregado">Entregado</label>
+                <input type="radio" name="estado" id="entregado" class="col-lg-2">
+              </div>
+            </div>
           </div>
         </div>
         <hr>
@@ -122,6 +137,7 @@
           <table id="tbShopcart">
             <thead>
               <tr style="border: solid black 2px;">
+                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">#Factura</th>
                 <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Categoría</th>
                 <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Nombre</th>
                 <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Precio</th>
@@ -131,6 +147,7 @@
               </tr>
             <tbody>
               <tr>
+                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">1001</th>
                 <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Perros</th>
                 <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">"Royal
                   Canin" <br>Digestion Maxima <br>6KL</th>
@@ -142,6 +159,7 @@
             </tbody>
             <tbody>
               <tr>
+                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">1002</th>
                 <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Perros</th>
                 <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">"Pedigree"
                   equilibrado <br>6KL</th>
@@ -153,6 +171,7 @@
             </tbody>
             <tbody>
               <tr>
+                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">1003</th>
                 <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Gatos</th>
                 <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">"Michi
                   Deluxe" <br>sabor atun con pollo <br>15 Kilos</th>
@@ -164,6 +183,7 @@
             </tbody>
             <tbody>
               <tr>
+                <th class="col-sm-3 col-lg-2 historial_tabla"></th>
                 <th class="col-sm-3 col-lg-2 historial_tabla"></th>
                 <th class="col-sm-3 col-lg-2 historial_tabla"></th>
                 <th class="col-sm-3 col-lg-2 historial_tabla"></th>

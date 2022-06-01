@@ -55,74 +55,98 @@
     </div>
   </nav>
   <!-- Navbar End -->
-
-      <br />
-      <br />
-      <div class="container">
-        <div class="border-start border-5 border-primary ps-5 mb-5 col-lg-8" style="max-width: 600px;">
-          <h1 class="display-5 text-uppercase mb-0">Detalles Venta #1001</h1>
-        </div>
-        <br>
+  <!-- Detalles venta Admin -->
+    <br />
+    <br />
+    <div class="container">
+      <div class="border-start border-5 border-primary ps-5 mb-5 col-lg-8" style="max-width: 600px;">
+        <h1 class="display-5 text-uppercase mb-0">Detalles Venta #1001</h1>
+      </div>
+      <br>
+      <div class="card">
         <div class="row">
-          <table id="tbShopcart">
-            <thead>
-              <tr style="border: solid black 2px;">
-                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Categoría</th>
-                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Nombre</th>
-                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Precio</th>
-                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Desc. Suscriptor</th>
-                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Desc. Oferta</th>
-                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Precio Final</th>
-              </tr>
-            <tbody>
-              <tr>
-                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Perros</th>
-                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">"Royal
-                  Canin" <br>Digestion Maxima <br>6KL</th>
-                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">$18.990</th>
-                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">0%</th>
-                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">0%</th>
-                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">$18.990</th>
-              </tr>
-            </tbody>
-            <tbody>
-              <tr>
-                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Perros</th>
-                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">"Pedigree"
-                  equilibrado <br>6KL</th>
-                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">$19.990</th>
-                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">5%</th>
-                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">45%</th>
-                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">$9.990</th>
-              </tr>
-            </tbody>
-            <tbody>
-              <tr>
-                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Gatos</th>
-                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">"Michi
-                  Deluxe" <br>sabor atun con pollo <br>15 Kilos</th>
-                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">$29.990</th>
-                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">5%</th>
-                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">25%</th>
-                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">$19.990</th>
-              </tr>
-            </tbody>
-            <tbody>
-              <tr>
-                <th class="col-sm-3 col-lg-2 historial_tabla"></th>
-                <th class="col-sm-3 col-lg-2 historial_tabla"></th>
-                <th class="col-sm-3 col-lg-2 historial_tabla"></th>
-                <th class="col-sm-3 col-lg-2 historial_tabla"></th>
-                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Total</th>
-                <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">$94.930</th>
-              </tr>
-            </tbody>
-            </thead>
-          </table>
-          <br>
-          <a href="saleshistory.html" class="btn btn-primary col-lg-1">Volver</a>
+          <div class="container-fluid" style="text-align: center;">
+            <br>
+            <h3 style="text-align: center;" >Estado de la compra</h3>
+            <div class="row">
+              <div class="col-lg-4">
+                <label for="bodega" >En Bodega</label>
+                <input type="radio" name="estado" id="bodega" class="col-lg-2" checked>
+              </div>
+              <div class="col-lg-4">
+                <label for="transito">En transito</label>
+                <input type="radio" name="estado" id="transito" class="col-lg-2"> 
+              </div>
+              <div class="col-lg-4">
+                <label for="entregado">Entregado</label>
+                <input type="radio" name="estado" id="entregado" class="col-lg-2">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <br>
+      <br>
+      <div class="row" style="padding: 20px;">
+        <table id="tbShopcart">
+          <thead>
+            <tr style="border: solid black 2px;">
+              <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Categoría</th>
+              <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Nombre</th>
+              <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Precio</th>
+              <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Desc. Suscriptor</th>
+              <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Desc. Oferta</th>
+              <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Precio Final</th>
+            </tr>
+          <tbody>
+            <tr>
+              <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Perros</th>
+              <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">"Royal
+                Canin" <br>Digestion Maxima <br>6KL</th>
+              <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">$18.990</th>
+              <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">0%</th>
+              <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">0%</th>
+              <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">$18.990</th>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Perros</th>
+              <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">"Pedigree"
+                equilibrado <br>6KL</th>
+              <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">$19.990</th>
+              <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">5%</th>
+              <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">45%</th>
+              <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">$9.990</th>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Gatos</th>
+              <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">"Michi
+                Deluxe" <br>sabor atun con pollo <br>15 Kilos</th>
+              <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">$29.990</th>
+              <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">5%</th>
+              <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">25%</th>
+              <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">$19.990</th>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th class="col-sm-3 col-lg-2 historial_tabla"></th>
+              <th class="col-sm-3 col-lg-2 historial_tabla"></th>
+              <th class="col-sm-3 col-lg-2 historial_tabla"></th>
+              <th class="col-sm-3 col-lg-2 historial_tabla"></th>
+              <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">Total</th>
+              <th class="col-sm-3 col-lg-2 historial_tabla" style="border: solid black 2px;">$94.930</th>
+            </tr>
+          </tbody>
+          </thead>
+        </table>
+        <br>
+        <a href="saleshistory.html" class="btn btn-primary col-lg-1">Volver</a>
+      </div>
+    </div>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

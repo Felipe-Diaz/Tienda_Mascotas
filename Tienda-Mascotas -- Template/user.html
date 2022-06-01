@@ -55,121 +55,168 @@
   <!-- Perfil de usuario -->
   <div class="container-xl">
     <div class="container">
-      <h2>Administraci&oacuten de Usuario</h2>
-      <br>
+      <div class="col-lg-12">
+        <span style="padding: 10px;">
+            <img src="img/iconos/Logo.png" alt="Logo" width="50px" style="text-align: center;">
+        </span>
+        <span>
+            <label style="vertical-align: middle;" class="logo"><h2>Configuraci&oacuten de usuario</h2></label>
+        </span>
+        <br>
+      </div>
     </div>
-    <div class="row">
-      <div class="col-sm">
-        <div class="row">
-          <div class="col-sm">
-            <section style="background-color: #fff;">
-              <form id="idUser" method="post" action="user.html">
-                <div class="form-group">
-                  <div class="card">
-                    <div class="col-sm-12" style="padding: 20px;">
-                      <div class="row">
-                        <div class="col-sm-4">
-                          <p class="mb-0">Nombre</p>
-                        </div>
-                        <div class="col-sm-8">
-                          <input type="text" class="stock_ammount" name="txtNombre" id="txtNombre"
-                            placeholder="John" />
-                        </div>
+  </div>
+  <br>
+  <div class="container-xl">
+    <div class="col-sm">
+      <div class="row">
+        <div class="col-sm">
+          <section style="background-color: #fff;">
+            <form id="idUser" method="post" action="user.html">
+              <div class="form-group">
+                <div class="card">
+                  <div class="col-sm-12" style="padding: 20px;">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <p class="mb-0">Id</p>
                       </div>
-                      <hr>
-                      <div class="row">
-                        <div class="col-sm-4">
-                          <p class="mb-0">Apellido</p>
-                        </div>
-                        <div class="col-sm-8">
-                          <input type="text" class="stock_ammount" name="txtApellido" id="txtApellido"
-                            placeholder="Smith" />
-                        </div>
+                      <div class="col-sm-8">
+                        <input type="text" class="stock_ammount" name="txtId" id="txtId"
+                          placeholder="123" />
                       </div>
-                      <hr>
-                      <div class="row">
-                        <div class="col-sm-4">
-                          <p class="mb-0">Email</p>
-                        </div>
-                        <div class="col-sm-8">
-                          <input type="email" class="stock_ammount" name="txtEmail" id="idEmail"
-                            placeholder="example@example.com" />
-                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <p class="mb-0">Nombre</p>
                       </div>
-                      <hr>
-                      <div class="row">
-                        <div class="col-sm-4">
-                          <p class="mb-0">Telefono</p>
-                        </div>
-                        <div class="col-sm-8">
-                          <input type="text" class="stock_ammount" name="txtTelefono"
-                            id="idTelefono" placeholder="(+56) 987654321" />
-                        </div>
+                      <div class="col-sm-8">
+                        <input type="text" class="stock_ammount" name="txtNombre" id="txtNombre"
+                          placeholder="John" />
                       </div>
-                      <hr>
-                      <div class="row">
-                        <div class="col-sm-4">
-                          <p class="mb-0">Rut</p>
-                        </div>
-                        <div class="col-sm-8">
-                          <input type="text" class="stock_ammount" name="txtRut" id="idRut"
-                            placeholder="12.345.678-9" />
-                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <p class="mb-0">Apellido</p>
                       </div>
-                      <hr>
-                      <div class="row">
-                        <div class="col-sm-4">
-                          <p class="mb-0">Direcci&oacuten</p>
-                        </div>
-                        <div class="col-sm-8">
-                          <input type="text" class="stock_ammount" name="txtDireccion"
-                            id="idDireccion" placeholder="Papitas #1234, Santiago, Chile" />
-                        </div>
+                      <div class="col-sm-8">
+                        <input type="text" class="stock_ammount" name="txtApellido" id="txtApellido"
+                          placeholder="Smith" />
                       </div>
-                      <hr>
-                      <div class="row">
-                        <div class="col-sm-4">
-                          <p class="mb-0">Tipo Usuario</p>
-                        </div>
-                        <div class="col-sm-8">
-                          <!-- <form action=""> -->
-                          <select name="cbTipoUser" id="cbTipoUser">
-                            <option value="1">Usuario</option>
-                            <option value="2">Administrador</option>
-                          </select>
-                          <!-- </form> -->
-                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <p class="mb-0">Email</p>
                       </div>
-                      <hr>
-                      <div class="row">
-                        <div class="col-sm-4">
-                          <p class="mb-0">Suscripción</p>
-                        </div>
-                        <div class="col-sm-8">
-                          <p>Suscrito</p>
-                        </div>
+                      <div class="col-sm-8">
+                        <input type="email" class="stock_ammount" name="txtEmail" id="idEmail"
+                          placeholder="example@example.com" />
                       </div>
-                      <hr>
-                      <div class="col-sm-12 d-flex justify-content-center">
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <p class="mb-0">Telefono</p>
+                      </div>
+                      <div class="col-sm-8">
+                        <input type="text" class="stock_ammount" name="txtTelefono"
+                          id="idTelefono" placeholder="(+56) 987654321" />
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <p class="mb-0">Rut</p>
+                      </div>
+                      <div class="col-sm-8">
+                        <input type="text" class="stock_ammount" name="txtRut" id="idRut"
+                          placeholder="12.345.678-9" />
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <p class="mb-0">Direcci&oacuten</p>
+                      </div>
+                      <div class="col-sm-8">
+                        <input type="text" class="stock_ammount" name="txtDireccion"
+                          id="idDireccion" placeholder="Papitas #1234, Santiago, Chile" />
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <p class="mb-0">Tipo Usuario</p>
+                      </div>
+                      <div class="col-sm-8">
+                        <!-- <form action=""> -->
+                        <select name="cbTipoUser" id="cbTipoUser">
+                          <option value="1">Usuario</option>
+                          <option value="2">Administrador</option>
+                        </select>
+                        <!-- </form> -->
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <p class="mb-0">Suscripción</p>
+                      </div>
+                      <div class="col-sm-8">
+                        <select name="cbSuscripcion" id="cbSuscripcion">
+                          <option value="1">Suscrito</option>
+                          <option value="2">No suscrito</option>
+                        </select>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <p class="mb-0">Contraseña</p>
+                      </div>
+                      <div class="col-sm-8">
+                        <input type="text" class="stock_ammount" name="txtRanContraseña"
+                          id="txtRanContraseña" placeholder="******" />
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="col-sm">
+                      <div class="" style="align-content:space-between;">
                         <button type="submit" class="btn btn-primary">
                           Guardar
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                          Nuevo
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                          Eliminar
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                          Generar Contraseña
                         </button>
                       </div>
                     </div>
                   </div>
                 </div>
-              </form>
-            </section>
-          </div>
-          <div class="col-sm">
-            <div class="card" style="padding: 20px;">
-              <div style="text-align: center;">
-                <img src="img/user.jpg" alt="" name="fotoperfil" id="fotoperfil" width="200px">
               </div>
-              <br>
-              <div style="text-align: center;">
-                <input class="form-control-file" type="file" name="buscarfoto" id="buscarfoto">
+            </form>
+          </section>
+        </div>
+        <div class="col-sm">
+          <div class="card" style="padding: 20px;">
+            <div style="text-align: center;">
+              <div>
+                <h4>
+                  Imagen de usuario
+                </h4>
               </div>
+              <img src="img/user.jpg" alt="" name="fotoperfil" id="fotoperfil" width="200px">
+            </div>
+            <br>
+            <div style="text-align: center;">
+              <input class="form-control-file" type="file" name="buscarfoto" id="buscarfoto">
             </div>
           </div>
         </div>
@@ -181,31 +228,31 @@
   <!-- User Table Start -->
   <br/> <br>
   <div class="container-xl">
-    <div class="table">
+    <div class="table" style="vertical-align: middle;">
       <div class="table-wrapper">
         <table class="table table-hover" id="tbUsuarioAdmin">
           <thead>
             <tr>
-              <th>#</th>
+              <th>Id</th>
               <th>Nombre</th>
-              <th>Fecha de creación</th>
-              <th>Rol</th>
-              <th>Estado</th>
+              <th>Rut</th>
+              <th>Tipo de Usuario</th>
+              <th>Direcci&oacuten</th>
               <th>Suscripción</th>
               <th>Acción</th>
             </tr>
           </thead>
           <!--  -->
-          <tbody>
+          <tbody style="justify-content: center;">
             <tr style="vertical-align: middle">
               <td>1</td>
               <td>
                   <img src="img/iconos/user1.png" class="avatar" alt="Avatar" />
                   Michael Holz</a>
               </td>
-              <td>04/10/2013</td>
+              <td>123.456.789.0</td>
               <td>Administrador</td>
-              <td><span class="status text-success">&bull;</span> Active</td>
+              <td><span></span></td>
               <td></td>
               <td></td>
             </tr>
@@ -215,9 +262,9 @@
                   <img src="img/iconos/user2.png" class="avatar" alt="Avatar" />
                   Paula Wilson</a>
               </td>
-              <td>05/08/2014</td>
+              <td>123.456.789.0</td>
               <td>usuario</td>
-              <td><span class="status text-success">&bull;</span> Active</td>
+              <td><span class="status text-success"></span>Avda Luis Thayer Ojeda 180, Providencia</td>
               <td>Suscrito</td>
               <td>
                 <a href="#"><img src="img/iconos/Button-sett.png" class="icon-btn" alt="sett" /></a>
@@ -230,11 +277,10 @@
                   <img src="img/iconos/user3.png" class="avatar" alt="Avatar" />
                   Antonio Moreno</a>
               </td>
-              <td>11/05/2015</td>
+              <td>123.456.789.0</td>
               <td>Usuario</td>
               <td>
-                <span class="status text-danger">&bull;</span> Suspended
-              </td>
+                <span class="status text-danger"></span>Gran Av. José M. Carrera 9682, El Bosque</td>
               <td>No Suscrito</td>
               <td>
                 <a href="#"><img src="img/iconos/Button-sett.png" class="icon-btn" alt="sett" /></a>
@@ -247,9 +293,9 @@
                   <img src="img/iconos/user4.png" class="avatar" alt="Avatar" />
                   Mary Saveley</a>
               </td>
-              <td>06/09/2016</td>
+              <td>123.456.789.0</td>
               <td>Usuario</td>
-              <td><span class="status text-success">&bull;</span> Active</td>
+              <td><span class="status text-success"></span> Avda Luis Thayer Ojeda 180, Providencia</td>
               <td>Suscrito</td>
               <td>
                 <a href="#"><img src="img/iconos/Button-sett.png" class="icon-btn" alt="sett" /></a>
@@ -262,10 +308,10 @@
                   <img src="img/iconos/user1.png" class="avatar" alt="Avatar" />
                   Martin Sommer</a>
               </td>
-              <td>12/08/2017</td>
+              <td>123.456.789.0</td>
               <td>Usuario</td>
               <td>
-                <span class="status text-warning">&bull;</span> Inactive
+                <span class="status text-warning"></span> Gran Av. José M. Carrera 9682, El Bosque
               </td>
               <td>Suscrito</td>
               <td>
@@ -279,10 +325,10 @@
                   <img src="img/iconos/user2.png" class="avatar" alt="Avatar" />
                   Martin Sommer</a>
               </td>
-              <td>12/08/2017</td>
+              <td>123.456.789.0</td>
               <td>Usuario</td>
               <td>
-                <span class="status text-warning">&bull;</span> Inactive
+                <span class="status text-warning"></span> Gran Av. José M. Carrera 9682, El Bosque
               </td>
               <td>No Suscrito</td>
               <td>
@@ -296,10 +342,10 @@
                   <img src="img/iconos/user3.png" class="avatar" alt="Avatar" />
                   Martin Sommer</a>
               </td>
-              <td>12/08/2017</td>
+              <td>123.456.789.0</td>
               <td>Usuario</td>
               <td>
-                <span class="status text-warning">&bull;</span> Inactive
+                <span class="status text-warning"></span> Gran Av. José M. Carrera 9682, El Bosque
               </td>
               <td>No Suscrito</td>
               <td>
@@ -313,10 +359,10 @@
                   <img src="img/iconos/user4.png" class="avatar" alt="Avatar" />
                   Martin Sommer</a>
               </td>
-              <td>12/08/2017</td>
+              <td>123.456.789.0</td>
               <td>Usuario</td>
               <td>
-                <span class="status text-warning">&bull;</span> Inactive
+                <span class="status text-warning"></span> Gran Av. José M. Carrera 9682, El Bosque
               </td>
               <td>Suscrito</td>
               <td>
@@ -330,10 +376,10 @@
                   <img src="img/iconos/user1.png" class="avatar" alt="Avatar" />
                   Martin Sommer</a>
               </td>
-              <td>12/08/2017</td>
+              <td>123.456.789.0</td>
               <td>Usuario</td>
               <td>
-                <span class="status text-warning">&bull;</span> Inactive
+                <span class="status text-warning"></span> Gran Av. José M. Carrera 9682, El Bosque
               </td>
               <td>Suscrito</td>
               <td>
@@ -347,10 +393,10 @@
                   <img src="img/iconos/user2.png" class="avatar" alt="Avatar" />
                   Martin Sommer</a>
               </td>
-              <td>12/08/2017</td>
+              <td>123.456.789.0</td>
               <td>Usuario</td>
               <td>
-                <span class="status text-warning">&bull;</span> Inactive
+                <span class="status text-warning"></span> Gran Av. José M. Carrera 9682, El Bosque
               </td>
               <td>Suscrito</td>
               <td>
@@ -364,10 +410,10 @@
                   <img src="img/iconos/user3.png" class="avatar" alt="Avatar" />
                   Martin Sommer</a>
               </td>
-              <td>12/08/2017</td>
+              <td>123.456.789.0</td>
               <td>Usuario</td>
               <td>
-                <span class="status text-warning">&bull;</span> Inactive
+                <span class="status text-warning"></span> Gran Av. José M. Carrera 9682, El Bosque
               </td>
               <td>Suscrito</td>
               <td>
@@ -381,10 +427,10 @@
                   <img src="img/iconos/user4.png" class="avatar" alt="Avatar" />
                   Martin Sommer</a>
               </td>
-              <td>12/08/2017</td>
+              <td>123.456.789.0</td>
               <td>Usuario</td>
               <td>
-                <span class="status text-warning">&bull;</span> Inactive
+                <span class="status text-warning"></span> Gran Av. José M. Carrera 9682, El Bosque
               </td>
               <td>Suscrito</td>
               <td>
@@ -398,10 +444,10 @@
                   <img src="img/iconos/user1.png" class="avatar" alt="Avatar" />
                   Martin Sommer</a>
               </td>
-              <td>12/08/2017</td>
+              <td>123.456.789.0</td>
               <td>Usuario</td>
               <td>
-                <span class="status text-warning">&bull;</span> Inactive
+                <span class="status text-warning"></span>Avda Luis Thayer Ojeda 180, Providencia
               </td>
               <td>Suscrito</td>
               <td>
@@ -415,10 +461,10 @@
                   <img src="img/iconos/user2.png" class="avatar" alt="Avatar" />
                   Martin Sommer</a>
               </td>
-              <td>12/08/2017</td>
+              <td>123.456.789.0</td>
               <td>Usuario</td>
               <td>
-                <span class="status text-warning">&bull;</span> Inactive
+                <span class="status text-warning"></span>Avda Luis Thayer Ojeda 180, Providencia
               </td>
               <td>Suscrito</td>
               <td>
@@ -432,10 +478,10 @@
                   <img src="img/iconos/user3.png" class="avatar" alt="Avatar" />
                   Martin Sommer</a>
               </td>
-              <td>12/08/2017</td>
+              <td>123.456.789.0</td>
               <td>Usuario</td>
               <td>
-                <span class="status text-warning">&bull;</span> Inactive
+                <span class="status text-warning"></span>Avda Luis Thayer Ojeda 180, Providencia
               </td>
               <td>No Suscrito</td>
               <td>
